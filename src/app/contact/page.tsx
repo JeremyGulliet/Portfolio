@@ -75,8 +75,8 @@ export default function Contact() {
       <Image
         alt="logo"
         src="/asset/Contact/contact.png"
-        width={500}
-        height={500}
+        width={400}
+        height={400}
         className="w-auto h-auto"
       />
     </main>

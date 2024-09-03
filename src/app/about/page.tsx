@@ -65,6 +65,7 @@ export default function About() {
         width={300}
         height={300}
         priority={true}
+        quality={50}
         className="grayscale rounded-xl  md:mr-10 ring-2 ring-white w-56 md:w-64 lg:w-auto lg:h-auto"
       />
     </main>

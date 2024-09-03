@@ -27,8 +27,8 @@ export default function HeroCv() {
           <Image
             src="/asset/projets/Programmer-rafiki.png"
             alt="hero template"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             className="rounded-lg object-cover w-full "
           />
         </div>
@@ -48,8 +48,8 @@ export default function HeroCv() {
           <Image
             src="/asset/projets/house.png"
             alt="hero template"
-            width={500}
-            height={300}
+            width={200}
+            height={200}
             className="rounded-lg object-cover w-full"
           />
         </div>
