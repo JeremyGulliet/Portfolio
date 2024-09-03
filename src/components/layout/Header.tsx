@@ -25,7 +25,7 @@ export default function Header() {
       </div>
       <Image
         alt="logo"
-        src="/asset/Logo/trif.png"
+        src="/asset/Logo/Trif.png"
         width={80}
         height={80}
         priority={true}

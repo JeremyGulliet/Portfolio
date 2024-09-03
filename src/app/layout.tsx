@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
-   // url: "https://portfolio-jeremy-gulliet.vercel.app/",
+   url: "https://portfolio-jeremy-gulliet.vercel.app/",
   },
   twitter: {
     card: "summary_large_image",
