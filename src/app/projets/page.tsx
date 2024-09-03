@@ -60,7 +60,7 @@ export default function Projets() {
   ];
  
   return (
-    <div className=" flex flex-col justify-center items-center w-screen gap-10 px-4 mb-20">
+    <main className=" flex flex-col justify-center items-center w-screen gap-10 px-4 mb-20">
       <div className=" w-screen h-20 md:w-3/6 md:h-36 relative flex flex-col justify-center items-center">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -89,7 +89,7 @@ export default function Projets() {
         <div className="absolute inset-0 w-full h-full bg-inherit rounded-xl [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
       <FocusCards cards={cards} />
-    </div>
+    </main>
   );
     
 }

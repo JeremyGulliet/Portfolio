@@ -23,7 +23,7 @@ export const Card = React.memo(
       onMouseLeave={() => !isMobile && setHovered(null)}
       onClick={card.onClick} // Ajout de la gestion du clic
       className={cn(
-        "rounded-xl relative shadow-xl bg-gray-200 dark:bg-gradient-to-r from-black  via-blue-950  to-black overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ring-2 ring-slate-500 dark:ring-white",
+        "rounded-xl relative shadow-xl  bg-gray-200 dark:bg-gradient-to-r from-black  via-blue-950  to-black overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ring-2 ring-slate-500 dark:ring-white",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
         card.onClick && "cursor-pointer" // Ajout du curseur pointeur si onClick est présent
       )}

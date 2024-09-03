@@ -27,7 +27,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center md:flex-row lg:gap-32">
+    <main className="flex flex-col justify-center items-center md:flex-row lg:gap-32">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -44,7 +44,7 @@ export default function Contact() {
         <div className="flex flex-col gap-4">
           {/* Bouton pour copier l'adresse e-mail */}
           <Button
-            className="bg-slate-400 dark:bg-blue-500 hover:bg-slate-400 w-52 rounded-xl"
+            className="bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl cursor-copy"
             onClick={copyEmailToClipboard}
           >
             {copied ? (
@@ -63,15 +63,13 @@ export default function Contact() {
           {/* Bouton pour ouvrir l'e-mail */}
           <Button
             asChild
-            className="flex bg-slate-400 dark:bg-blue-500 hover:bg-slate-400 w-52 rounded-xl"
+            className="flex bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl"
           >
             <a href="mailto:jrmy.gulliet@gmail.com">
               <p className="mr-2">Envoyer un email </p>
               <FaEnvelope />
             </a>
           </Button>
-
-          
         </div>
       </div>
       <Image
@@ -81,6 +79,6 @@ export default function Contact() {
         height={500}
         className=""
       />
-    </div>
+    </main>
   );
 }
