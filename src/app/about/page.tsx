@@ -62,9 +62,10 @@ export default function About() {
       <Image
         src="/asset/moi/me.png"
         alt="Photo"
-        width={500}
-        height={500}
-        className="grayscale rounded-xl w-40 md:w-64 lg:w-96 md:mr-10 ring-2 ring-white"
+        width={300}
+        height={300}
+        priority={true}
+        className="grayscale rounded-xl  md:mr-10 ring-2 ring-white w-56 md:w-64 lg:w-auto lg:h-auto"
       />
     </main>
   );

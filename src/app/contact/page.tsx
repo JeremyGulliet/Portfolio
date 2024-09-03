@@ -44,7 +44,7 @@ export default function Contact() {
         <div className="flex flex-col gap-4">
           {/* Bouton pour copier l'adresse e-mail */}
           <Button
-            className="bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl cursor-copy"
+            className="bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl cursor-pointer"
             onClick={copyEmailToClipboard}
           >
             {copied ? (

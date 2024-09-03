@@ -10,7 +10,18 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio - Accueil",
-  description: "Page accueil du Portefolio de Jérémy GULLIET",
+  description: "Page accueil du Portfolio de Jérémy GULLIET",
+  keywords: "application, web, nextjs, portfolio",
+  openGraph: {
+    title: "Portfolio Jérémy GULLIET",
+    description: "Portfolio de Jérémy GULLIET",
+    url: "https://portfolio-jeremy-gulliet.vercel.app/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio Jérémy GULLIET",
+    description: "Portfolio de Jérémy GULLIET",
+  },
 };
 
 
