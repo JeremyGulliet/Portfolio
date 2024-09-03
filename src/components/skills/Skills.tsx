@@ -38,11 +38,11 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center h-full relative overflow-hidden p-10 rounded-xl"
+      className="basis-1/4 flex flex-col items-center justify-center overflow-hidden  p-6 rounded-xl bg-slate-300 dark:bg-gradient-to-t from-black  via-blue-950  to-black"
     >
       <SkillText />
 
-      <div className="grid grid-cols-7 mt-10 gap-3 sm:gap-5 md:gap-8">
+      <div className="grid grid-cols-7 mt-6 gap-3 sm:gap-5 md:gap-8 ">
         {SKILL.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -66,7 +66,7 @@ const Skills = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-4 mt-4 gap-3 sm:gap-5 md:gap-8">
+      <div className="grid grid-cols-4 mt-4 gap-3 sm:gap-5 md:gap-8 ">
         {DATABASE_SKILL.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -78,7 +78,7 @@ const Skills = () => {
         ))}
       </div>
 
-      <div className="w-screen h-screen absolute">
+      {/* <div className="w-screen h-screen absolute">
         {isLightMode ? (
           <div className="w-full h-full z-[-10] absolute bg-slate-300 rounded-xl"></div>
         ) : (
@@ -94,7 +94,7 @@ const Skills = () => {
             />
           </div>
         )}
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col items-center justify-between bg-slate-200 dark:bg-gradient-to-r from-black  via-blue-950  to-black ">
+      <body className="flex flex-col items-center justify-between bg-slate-100 dark:bg-gradient-to-r from-black  via-blue-950  to-black ">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

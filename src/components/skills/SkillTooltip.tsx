@@ -6,7 +6,7 @@ import SkillText from "./SkillText";
 
 export function SkillTooltip() {
 
-    const AllSkills = [
+    const AllSkills1 = [
       {
         id: 1,
         name: "HTML 5",
@@ -50,69 +50,55 @@ export function SkillTooltip() {
         name: "Express JS",
         image: "/asset/Logo/express.png",
       },
-      {
-        id: 9,
-        name: "Node JS",
-        image: "/asset/Logo/node-js.png",
-      },
-      {
-        id: 10,
-        name: "Next JS",
-        image: "/asset/Logo/Next.png",
-      },
-      {
-        id: 11,
-        name: "Vite JS",
-        image: "/asset/Logo/Vite.js.png",
-      },
-      {
-        id: 12,
-        name: "Expo",
-        image: "/asset/Logo/expo-a.png",
-      },
+      
 
-      {
-        id: 13,
-        name: "Postgre SQL",
-        image: "/asset/Logo/postgresql.png",
-      },
-      {
-        id: 14,
-        name: "MongoDB",
-        image: "/asset/Logo/MongoDB.png",
-      },
-      {
-        id: 15,
-        name: "Prisma",
-        image: "/asset/Logo/prisma.webp",
-      },
-      {
-        id: 16,
-        name: "Mongoose",
-        image: "/asset/Logo/Mongoose.js.png",
-      },
-    ];
+    {
+      id: 9,
+      name: "Node JS",
+      image: "/asset/Logo/node-js.png",
+    },
+    {
+      id: 10,
+      name: "Next JS",
+      image: "/asset/Logo/Next.png",
+    },
+    {
+      id: 11,
+      name: "Vite JS",
+      image: "/asset/Logo/Vite.js.png",
+    },
+    {
+      id: 12,
+      name: "Expo",
+      image: "/asset/Logo/expo-a.png",
+    },
+
+    {
+      id: 13,
+      name: "Postgre SQL",
+      image: "/asset/Logo/postgresql.png",
+    },
+    {
+      id: 14,
+      name: "MongoDB",
+      image: "/asset/Logo/MongoDB.png",
+    },
+    {
+      id: 15,
+      name: "Prisma",
+      image: "/asset/Logo/prisma.webp",
+    },
+    {
+      id: 16,
+      name: "Mongoose",
+      image: "/asset/Logo/Mongoose.js.png",
+    },
+  ];
    
 
   return (
-    <div className="relative flex flex-col items-center justify-center mb-10 pt-4 w-full h-full">
-      {/* Conteneur pour la vidéo en arrière-plan */}
-      <div className="absolute inset-0 z-[-10] flex items-center justify-center overflow-hidden rounded-xl">
-        <video
-          className="w-full h-full object-cover opacity-30"
-          preload="false"
-          playsInline
-          loop
-          muted
-          autoPlay
-          src="/asset/cards-video.webm"
-        />
-      </div>
-      <SkillText />
-      {/* Conteneur du tooltip avec les compétences */}
-      <div className="relative z-10 flex p-10">
-        <AnimatedTooltip items={AllSkills} />
-      </div>
+    <div className="hidden md:flex items-center mjustify-center pt-10 px-6 border-t-2 border-slate-600 dark:border-blue-300">
+          <AnimatedTooltip items={AllSkills1} />     
     </div>
   );
 }

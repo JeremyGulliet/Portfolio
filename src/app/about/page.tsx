@@ -8,7 +8,6 @@ import { IoIosDocument, IoIosPhonePortrait } from "react-icons/io";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import BlurIn from "@/components/magicui/blur-in";
 
 
 export default function About() {
@@ -19,11 +18,11 @@ export default function About() {
         fill="white"
       />
       <div className="flex flex-col justify-center items-center gap-14 md:gap-10 md:w-1/2 lg:border-r-2 lg:pr-4 ">
-        <h1 className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-blue-300 via-blue-500 to-blue-800 bg-clip-text text-center text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-transparent p-4">
+        <h1 className="pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-300 via-blue-500 to-blue-800 dark:bg-clip-text text-center text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-slate-600 dark:text-transparent p-4">
           Qui suis-je?
         </h1>
 
-        <p className=" antialiased px-4 lg:ml-10 lg:p-4 text-sm md:text-lg lg:text-xl font-bold text-justify dark:text-white">
+        <p className=" antialiased px-4 lg:ml-10 lg:p-4 text-md md:text-lg lg:text-xl font-bold text-justify dark:text-white">
           Je m'appelle Jérémy et après plus de 10 ans dans le monde de
           l'immobilier, j'ai décidé de me reconvertir dans le domaine de la
           tech! Durant ces années, j’ai appris à travailler en équipe, à gérer
@@ -43,7 +42,7 @@ export default function About() {
               rel="noopener noreferrer"
               className="flex bg-slate-400 dark:dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl"
             >
-              <p className="mr-2">Télécharger mon CV</p>
+              <p className="mr-2">Mon CV</p>
               <IoIosDocument />
             </a>
           </Button>

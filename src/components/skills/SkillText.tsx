@@ -16,10 +16,10 @@ const SkillText = () => {
   };
 
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center">
+    <div className="w-full h-auto flex flex-col items-center justify-center border-b-2 border-slate-600 dark:border-white pb-4">
       <motion.h1
         ref={ref}
-        className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl text-center font-semibold text-transparent z-[20] bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-cyan-500"
+        className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl text-center font-bold dark:font-semibold dark:text-transparent z-[20] dark:bg-clip-text text-slate-600 dark:bg-gradient-to-r from-cyan-500 to-indigo-500 dark:hover:bg-gradient-to-r dark:hover:from-indigo-500 dark:hover:to-cyan-500"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={titleVariants}

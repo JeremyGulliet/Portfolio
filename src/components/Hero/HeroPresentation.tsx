@@ -15,19 +15,19 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function HeroPresentation() {
     return (
       <>
-        <Card className=" w-full max-w-3xl h-full dark:bg-gradient-to-r from-black  via-blue-950  to-black border-none">
+        <Card className="basis-1/4 w-full max-w-xl bg-slate-300  dark:bg-gradient-to-t from-black  via-blue-950  to-black border-none">
           <CardHeader>
-            <CardTitle className="flex justify-between items-center border-b-2 pb-3">
+            <CardTitle className="flex justify-between items-center border-b-2 pb-3 border-slate-600 dark:border-white">
               <div className="flex flex-col w-full">
                 <div className="flex justify-between items-center">
-                  <p className="text-4xl pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 bg-clip-text  font-bold leading-none tracking-tighter text-transparent pb-2">
+                  <p className="text-3xl lg:text-4xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text  font-bold leading-none tracking-tighter text-slate-600 dark:text-transparent pb-2">
                     Jérémy GULLIET
                   </p>
                   <Link href="/about">
-                    <FaArrowUpRightFromSquare className="cursor-pointer" />
+                    <FaArrowUpRightFromSquare className="cursor-pointer size-3 lg:size-4" />
                   </Link>
                 </div>
-                <p className="text-3xl pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 bg-clip-text  leading-none tracking-tighter text-transparent pb-2">
+                <p className="text-xl lg:text-3xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text  leading-none tracking-tighter text-slate-600 dark:text-transparent pb-2">
                   Développeur web et mobile
                 </p>
               </div>
@@ -37,24 +37,24 @@ export default function HeroPresentation() {
               présenteront à moi.
             </CardDescription> */}
           </CardHeader>
-          <CardContent className=" text-xl">
+          <CardContent className=" text-base lg:text-xl">
             La satisfaction client est ma priorité et je suis prêt à vous
             accompagner dans la construction de tous vos projets.
           </CardContent>
-          <CardFooter className="flex flex-col justify-center items-center gap-6 pt-10 ">
-            <div className="flex flex-col lg:flex-row gap-2 lg:gap-10">
-              <Button asChild className="mt-4 w-44">
+          <CardFooter className="flex flex-col justify-center items-center gap-6 pt-2 lg:pt-7 ">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-10">
+              <Button asChild className="lg:mt-4 lg:w-44">
                 <a
                   href="/asset/CV Développeur.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex bg-slate-400 dark:dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl"
                 >
-                  <p className="mr-2">Télécharger mon CV</p>
+                  <p className="mr-2">Mon CV</p>
                   <IoIosDocument />
                 </a>
               </Button>
-              <Button asChild className="mt-4 w-44">
+              <Button asChild className="lg:mt-4 lg:w-44">
                 <Link
                   href="/contact"
                   rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function HeroPresentation() {
                 </Link>
               </Button>
             </div>
-            <div className="flex justify-center items-center gap-3 border-t-2 pt-2">
+            <div className="flex justify-center items-center gap-3 border-t-2 pt-2 border-slate-600 dark:border-white">
               <Link href="https://github.com/JeremyGulliet" target="_blank">
                 <FaGithub className=" size-5 md:size-8" />
               </Link>

@@ -28,7 +28,8 @@ export default function Header() {
         src="/asset/Logo/trif.png"
         width={80}
         height={80}
-        className="hidden md:inline md:ml-20"
+        priority={true}
+        className="hidden md:inline md:ml-20 w-auto h-auto"
       />
       {/* Navigation visible seulement sur les écrans md et plus */}
       <nav className="border-2 border-slate-500 shadow-lg shadow-indigo-300/50 dark:border-2 dark:border-white rounded-full py-1 hidden md:inline md:w-96 lg:inline lg:w-1/3">
