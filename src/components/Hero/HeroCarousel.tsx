@@ -55,7 +55,7 @@ export default function HeroCarousel() {
     },
     {
       title: "Jeu du serpent",
-      src: "/asset/Projets/Snake.png",
+      src: "/asset/projets/Snake.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
@@ -68,7 +68,7 @@ export default function HeroCarousel() {
     },
     {
       title: "Portfolio",
-      src: "/asset/Projets/Contact.png",
+      src: "/asset/projets/Contact.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">

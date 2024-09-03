@@ -74,7 +74,7 @@ export default function Contact() {
       </div>
       <Image
         alt="logo"
-        src="/asset/Contact/contact.png"
+        src="/asset/contact/contact.png"
         width={400}
         height={400}
         className="w-auto h-auto"

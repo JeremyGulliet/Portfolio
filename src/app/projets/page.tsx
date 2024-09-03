@@ -11,7 +11,7 @@ export default function Projets() {
       title: "DressCode",
       description:
         "Application mobile qui permet d'avoir son dressing à portée de main et de générer des tenues aléatoirement.",
-      src: "/asset/Projets/dressing.png",
+      src: "/asset/projets/dressing.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
@@ -40,7 +40,7 @@ export default function Projets() {
     {
       title: "Jeu du serpent",
       description: "Le jeu qui nous a accompagné sur nos Nokia 3310.",
-      src: "/asset/Projets/Dragon-rafiki.png",
+      src: "/asset/projets/Dragon-rafiki.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
@@ -54,7 +54,7 @@ export default function Projets() {
     {
       title: "Portfolio",
       description: "Premier projet web en solo",
-      src: "/asset/Projets/Portfolio-rafiki.png",
+      src: "/asset/projets/Portfolio-rafiki.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
