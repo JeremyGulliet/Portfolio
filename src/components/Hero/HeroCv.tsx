@@ -25,7 +25,7 @@ export default function HeroCv() {
             plateforme comme Spikes, Frontend Mentor...
           </p>
           <Image
-            src="/asset/projets/Programmer-rafiki.png"
+            src="/asset/Projets/Programmer-rafiki.png"
             alt="hero template"
             width={200}
             height={200}
@@ -46,7 +46,7 @@ export default function HeroCv() {
           </p>
 
           <Image
-            src="/asset/projets/house.png"
+            src="/asset/Projets/house.png"
             alt="hero template"
             width={200}
             height={200}

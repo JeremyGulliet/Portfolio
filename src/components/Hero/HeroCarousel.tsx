@@ -27,7 +27,7 @@ export default function HeroCarousel() {
   const cards: CardType[] = [
     {
       title: "DressCode",
-      src: "/asset/projets/Dresscode2.jpeg",
+      src: "/asset/Projets/Dresscode2.jpeg",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
@@ -55,7 +55,7 @@ export default function HeroCarousel() {
     },
     {
       title: "Jeu du serpent",
-      src: "/asset/projets/Snake.png",
+      src: "/asset/Projets/Snake.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
@@ -68,7 +68,7 @@ export default function HeroCarousel() {
     },
     {
       title: "Portfolio",
-      src: "/asset/projets/Contact.png",
+      src: "/asset/Projets/Contact.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
           <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
@@ -88,7 +88,7 @@ export default function HeroCarousel() {
     },
     {
       title: "Tous mes projets",
-      src: "/asset/projets/allproject.jpg",
+      src: "/asset/Projets/allproject.jpg",
       badge: <div></div>,
       onClick: () => {
         window.location.href = "/projets";
