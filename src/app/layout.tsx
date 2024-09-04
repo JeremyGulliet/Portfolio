@@ -17,13 +17,14 @@ export const metadata: Metadata = {
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
     url: "https://portfolio-jeremy-gulliet.vercel.app/",
-    images: "https://portfolio-jeremy-gulliet.vercel.app/",
+    images: "asset/Projets/Programmer-rafiki.png",
+    siteName: "Portfolio Jérémy GULLIET",
   },
   twitter: {
     card: "summary_large_image",
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
-    images: "https://portfolio-jeremy-gulliet.vercel.app/",
+    images: "asset/Projets/Programmer-rafiki.png",
   },
 };
 
