@@ -9,18 +9,18 @@ export default function HeroCv() {
       title: "2024",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-white text-sm  font-normal mb-8">
+          <p className="text-slate-800 dark:text-white text-sm  font-normal mb-8">
             Bootcamp à la Capsule pour apprendre les bases de la programmation,
             React et React Native.
           </p>
-          <p className="text-neutral-800 dark:text-white text-sm font-normal mb-8">
+          <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
             Création de l'application mobile DressCode avec React Native.
           </p>
-          <p className="text-neutral-800 dark:text-white text-sm font-normal mb-8">
+          <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
             Perfectionnement en React (NextJS, TailwindCSS et différentes
             librairie) et React Native (Expo).
           </p>
-          <p className="text-neutral-800 dark:text-white text-sm font-normal mb-8">
+          <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
             Je réalise différents challenges pour continuer à apprendre sur des
             plateforme comme Spikes, Frontend Mentor...
           </p>
@@ -39,7 +39,7 @@ export default function HeroCv() {
       title: "2023 et Avant",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-white text-sm font-normal mb-8">
+          <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
             Après une dizaine d'année dans l'immobilier, j'ai démissioné pour
             pouvoir me consacrer à cette reconversion avant de commencer ma
             formation à la Capsule.

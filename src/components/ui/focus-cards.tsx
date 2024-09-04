@@ -23,7 +23,7 @@ export const Card = React.memo(
       onMouseLeave={() => !isMobile && setHovered(null)}
       onClick={card.onClick} // Ajout de la gestion du clic
       className={cn(
-        "rounded-xl relative shadow-xl  bg-gray-200 dark:bg-gradient-to-r from-black  via-blue-950  to-black overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ring-2 ring-slate-500 dark:ring-white",
+        "rounded-xl relative shadow-xl  bg-emerald-100 dark:bg-gradient-to-r from-black  via-blue-950  to-black overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ring-2 ring-emerald-200 dark:ring-white",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
         card.onClick && "cursor-pointer" // Ajout du curseur pointeur si onClick est présent
       )}
@@ -42,10 +42,10 @@ export const Card = React.memo(
         )}
       >
         <div>
-          <h1 className="mb-4 text-xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+          <h1 className="mb-4 text-xl md:text-4xl font-bold text-white">
             {card.title}
           </h1>
-          <p className="text-md font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mb-4">
+          <p className="text-md font-semibold text-white mb-4">
             {card.description}
           </p>
           <span>{card.badge}</span>

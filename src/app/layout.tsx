@@ -37,14 +37,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col items-center justify-between bg-slate-100 dark:bg-gradient-to-r from-black  via-blue-950  to-black ">
+      <body className="flex flex-col items-center justify-between bg-emerald-50 dark:bg-gradient-to-r dark:from-black  dark:via-blue-950  dark:to-black ">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex flex-col items-center justify-between w-screen h-screen">
+          <main className="flex flex-col items-center justify-between w-screen h-screen overflow-scroll no-scrollbar">
             <Header />
             {children}
             <Footer />

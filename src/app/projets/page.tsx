@@ -14,19 +14,19 @@ export default function Projets() {
       src: "/asset/Projets/dressing.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             React Native / Expo
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             Redux
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             ExpressJS
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             MongoDB
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             Mongoose
           </Badge>
         </div>
@@ -43,7 +43,7 @@ export default function Projets() {
       src: "/asset/Projets/Dragon-rafiki.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             React
           </Badge>
         </div>
@@ -57,16 +57,16 @@ export default function Projets() {
       src: "/asset/Projets/Portfolio-rafiki.png",
       badge: (
         <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             React
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             Next JS
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             TypeScript
           </Badge>
-          <Badge className="bg-slate-600 dark:bg-blue-500 text-white rounded-xl">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
             TailwindCSS
           </Badge>
         </div>
@@ -88,7 +88,7 @@ export default function Projets() {
         <div className="absolute inset-x-60 bottom-0 dark:bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
         {/* Core component */}
-        <h1 className="pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b dark:from-blue-200 dark:via-blue-400 dark:to-blue-600 dark:bg-clip-text text-center text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-slate-600 dark:text-transparent p-4">
+        <h1 className="pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b dark:from-blue-200 dark:via-blue-400 dark:to-blue-600 dark:bg-clip-text text-center text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-slate-800 dark:text-transparent p-4">
           MES PROJETS
         </h1>
         <SparklesCore

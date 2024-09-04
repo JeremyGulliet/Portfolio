@@ -33,19 +33,19 @@ export default function Contact() {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
-      <div className="flex flex-col md:w-2/5 gap-10 bg-slate-300 dark:bg-inherit rounded-xl p-8 mx-4 md:mx-0">
-        <h1 className="text-3xl md:text-4xl font-bold dark:text-white text-justify">
+      <div className="flex flex-col md:w-2/5 gap-10 rounded-xl p-8 mx-4 md:mx-0">
+        <h1 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white text-justify">
           CONTACTEZ-MOI
         </h1>
-        <p className="text-md md:text-lg font-bold dark:text-white text-justify">
-          Je suis à la recherche de toutes les opportunitées qui se présenteront
-          à moi. Je peux travailler seul ou en équipe. <br /> <br />
+        <p className="text-md md:text-lg font-bold text-slate-800 dark:text-white text-justify">
+          Je suis disponible pour toutes les opportunitées qui se présenteront à
+          moi. Je peux travailler seul ou en équipe. <br /> <br />
           Vous pouvez me contacter par email ou via LinkedIn.
         </p>
         <div className="flex flex-col gap-4">
           {/* Bouton pour copier l'adresse e-mail */}
           <Button
-            className="bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl cursor-pointer"
+            className="dark:text-white dark:font-normal text-slate-800 font-semibold bg-emerald-300  dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl cursor-pointer transition ease-in-out duration-150 hover:scale-105"
             onClick={copyEmailToClipboard}
           >
             {copied ? (
@@ -64,7 +64,7 @@ export default function Contact() {
           {/* Bouton pour ouvrir l'e-mail */}
           <Button
             asChild
-            className="flex bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl"
+            className="flex dark:text-white dark:font-normal text-slate-800 font-semibold bg-emerald-300  dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl transition ease-in-out duration-150 hover:scale-105"
           >
             <Link href="mailto:jrmy.gulliet@gmail.com">
               <p className="mr-2">Envoyer un email </p>

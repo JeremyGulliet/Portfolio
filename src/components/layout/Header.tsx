@@ -19,8 +19,8 @@ export default function Header() {
   const linkStyle = (path: string) =>
     `flex justify-center items-center w-40 py-3 ${
       pathname === path
-        ? "bg-slate-400 dark:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
-        : "transition ease-in-out delay-150 hover:scale-90 hover:bg-slate-400 opacity-60 dark:hover:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
+        ? "bg-emerald-300 dark:bg-blue-400 rounded-3xl w-40 py-3 mx-1 text-slate-800 dark:text-white"
+        : "transition ease-in-out delay-150 hover:scale-90 hover:bg-emerald-400 opacity-60 dark:hover:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
     }`;
 
   return (
@@ -41,7 +41,7 @@ export default function Header() {
           />
      
       {/* Navigation visible seulement sur les écrans md et plus */}
-      <nav className="border-2 border-slate-500 shadow-lg shadow-indigo-300/50 dark:border-2 dark:border-white rounded-full py-1 hidden md:inline md:w-96 lg:inline lg:w-1/3">
+      <nav className="border-2 border-emerald-300 dark:shadow-lg dark:shadow-indigo-300/50 dark:border-2 dark:border-white rounded-full py-1 hidden md:inline md:w-96 lg:inline lg:w-1/3">
         <ul className="flex justify-center items-center gap-2">
           <li className={linkStyle("/")}>
             <Link href="/">Accueil</Link>

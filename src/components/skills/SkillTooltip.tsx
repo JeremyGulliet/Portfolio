@@ -97,7 +97,7 @@ export function SkillTooltip() {
    
 
   return (
-    <div className="hidden md:flex items-center mjustify-center pt-10 px-6 border-t-2 border-slate-600 dark:border-blue-300">
+    <div className="hidden md:flex items-center mjustify-center pt-10 px-6 border-t-2 border-slate-800 dark:border-white">
           <AnimatedTooltip items={AllSkills1} />     
     </div>
   );

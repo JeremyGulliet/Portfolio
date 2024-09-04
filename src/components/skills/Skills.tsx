@@ -38,7 +38,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="basis-1/4 flex flex-col items-center justify-center overflow-hidden  p-6 rounded-xl bg-slate-300 dark:bg-gradient-to-t from-black  via-blue-950  to-black"
+      className="basis-1/4 flex flex-col items-center justify-center overflow-hidden  p-6 rounded-xl bg-emerald-100 dark:bg-gradient-to-t dark:from-black dark:via-blue-950 dark:to-black"
     >
       <SkillText />
 
