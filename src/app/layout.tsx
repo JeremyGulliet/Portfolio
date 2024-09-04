@@ -9,13 +9,15 @@ import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-jeremy-gulliet.vercel.app/"),
   title: "Portfolio - Accueil",
   description: "Page accueil du Portfolio de Jérémy GULLIET",
   keywords: "application, web, nextjs, portfolio",
   openGraph: {
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
-   url: "https://portfolio-jeremy-gulliet.vercel.app/",
+    url: "https://portfolio-jeremy-gulliet.vercel.app/",
+    images: "/asset/Projets/Contact",
   },
   twitter: {
     card: "summary_large_image",

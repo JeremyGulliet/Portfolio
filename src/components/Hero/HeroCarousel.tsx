@@ -11,8 +11,11 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
+import { useRouter } from "next/navigation";
 
 export default function HeroCarousel() {
+  const router = useRouter();
+
    const plugin = React.useRef(
      Autoplay({ delay: 3000, stopOnInteraction: false })
   );
@@ -91,7 +94,7 @@ export default function HeroCarousel() {
       src: "/asset/Projets/allproject.jpg",
       badge: <div></div>,
       onClick: () => {
-        window.location.href = "/projets";
+        router.push("/projets");
       },
     },
   ];

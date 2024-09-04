@@ -14,7 +14,7 @@ export default function Header() {
     `flex justify-center items-center w-40 py-3 ${
       pathname === path
         ? "bg-slate-400 dark:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
-        : "hover:bg-slate-400 opacity-50 dark:hover:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
+        : "transition ease-in-out delay-150 hover:scale-90 hover:bg-slate-400 opacity-60 dark:hover:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
     }`;
 
   return (

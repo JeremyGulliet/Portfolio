@@ -8,8 +8,8 @@ export default function Footer() {
 
   return (
     
-    <footer className="flex flex-col justify-center items-center py-6 w-screen gap-3">
-      <div className="flex justify-center items-center gap-3">
+    <footer className="flex flex-col justify-center items-center py-6 gap-3">
+      <div className="flex justify-center items-center gap-3 pb-2">
         <Link href="https://github.com/JeremyGulliet" target="_blank">
           <FaGithub className=" size-5 md:size-8" />
         </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
           <FaLinkedin className="size-5 md:size-8" />
         </Link>
       </div>
-      <div className="border-t pt-1">
+      <div className="border-t pt-2">
         <p>© {new Date().getFullYear()} Jérémy's Portfolio</p>
       </div>
     </footer>

@@ -7,7 +7,7 @@ export function HeroButtonMobile() {
     return (
       <div className="flex flex-col justify-center items-center gap-4 mt-6 md:hidden">
         <Button asChild className="w-52">
-          <a
+          <Link
             href="/asset/CV Développeur.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -15,7 +15,7 @@ export function HeroButtonMobile() {
           >
             <p className="mr-2">Mon CV</p>
             <IoIosDocument />
-          </a>
+          </Link>
         </Button>
         <Button asChild className="w-52">
           <Link

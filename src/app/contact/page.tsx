@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { FaRegCopy, FaCheck, FaEnvelope } from "react-icons/fa";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
 
@@ -65,10 +66,10 @@ export default function Contact() {
             asChild
             className="flex bg-slate-400 dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 w-52 rounded-xl"
           >
-            <a href="mailto:jrmy.gulliet@gmail.com">
+            <Link href="mailto:jrmy.gulliet@gmail.com">
               <p className="mr-2">Envoyer un email </p>
               <FaEnvelope />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

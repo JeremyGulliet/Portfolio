@@ -36,7 +36,7 @@ export default function About() {
         {/* Bouton pour ouvrir le CV en PDF */}
         <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-10">
           <Button asChild className="mt-4 w-52">
-            <a
+            <Link
               href="/asset/CV Développeur.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +44,7 @@ export default function About() {
             >
               <p className="mr-2">Mon CV</p>
               <IoIosDocument />
-            </a>
+            </Link>
           </Button>
           <Button asChild className="mt-4 w-52">
             <Link

@@ -15,7 +15,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function HeroPresentation() {
     return (
       <>
-        <Card className="basis-1/4 w-full max-w-xl bg-slate-300  dark:bg-gradient-to-t from-black  via-blue-950  to-black border-none">
+        <Card className="basis-1/4 w-full max-w-xl bg-slate-300  dark:bg-gradient-to-t from-black  via-blue-950  to-black border-none px-2">
           <CardHeader>
             <CardTitle className="flex justify-between items-center border-b-2 pb-3 border-slate-600 dark:border-white">
               <div className="flex flex-col w-full">
@@ -41,8 +41,8 @@ export default function HeroPresentation() {
             La satisfaction client est ma priorité et je suis prêt à vous
             accompagner dans la construction de tous vos projets.
           </CardContent>
-          <CardFooter className="flex flex-col justify-center items-center gap-6 pt-2 lg:pt-7 ">
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-10">
+          <CardFooter className="flex flex-col justify-center items-center gap-6 pt-2 lg:pt-2 ">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 lg:pb-3">
               <Button asChild className="lg:mt-4 lg:w-44">
                 <a
                   href="/asset/CV Développeur.pdf"
@@ -65,7 +65,7 @@ export default function HeroPresentation() {
                 </Link>
               </Button>
             </div>
-            <div className="flex justify-center items-center gap-3 border-t-2 pt-2 border-slate-600 dark:border-white">
+            <div className="flex justify-center items-center gap-3 border-t-2 pt-4 border-slate-600 dark:border-white">
               <Link href="https://github.com/JeremyGulliet" target="_blank">
                 <FaGithub className=" size-5 md:size-8" />
               </Link>
