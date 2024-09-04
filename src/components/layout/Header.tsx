@@ -4,11 +4,17 @@ import React from "react";
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import ResponsiveMenu from "./responsive-menu";
 import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
+  const handleClick = () => {
+      router.push('/');
+    };
+  
 
   const linkStyle = (path: string) =>
     `flex justify-center items-center w-40 py-3 ${
@@ -23,14 +29,17 @@ export default function Header() {
       <div className="md:hidden ml-4">
         <ResponsiveMenu />
       </div>
-      <Image
-        alt="logo"
-        src="/asset/Logo/Trif.png"
-        width={80}
-        height={80}
-        priority={true}
-        className="hidden md:inline md:ml-20 w-auto h-auto"
-      />
+      
+          <Image
+            alt="logo"
+            src="/asset/Logo/Trif.png"
+            width={80}
+            height={80}
+            priority={true}
+        className="hidden md:inline md:ml-20 w-auto h-auto cursor-pointer"
+        onClick={handleClick}
+          />
+     
       {/* Navigation visible seulement sur les écrans md et plus */}
       <nav className="border-2 border-slate-500 shadow-lg shadow-indigo-300/50 dark:border-2 dark:border-white rounded-full py-1 hidden md:inline md:w-96 lg:inline lg:w-1/3">
         <ul className="flex justify-center items-center gap-2">

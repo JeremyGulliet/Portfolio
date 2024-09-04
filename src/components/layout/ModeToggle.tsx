@@ -30,24 +30,24 @@ export function ModeToggle() {
       >
         <DropdownMenuItem
           onClick={() => setTheme("light")}
-          className={`cursor-pointer mb-1  hover:bg-slate-400 hover:dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl ${
-            theme === "light" ? "bg-slate-400 dark:bg-blue-700" : ""
+          className={`cursor-pointer mb-1 hover:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl ${
+            theme === "light" ? "bg-blue-500 dark:bg-blue-700" : ""
           }`}
         >
           Light
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme("dark")}
-          className={`cursor-pointer mb-1 hover:bg-slate-400 hover:dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl ${
-            theme === "dark" ? "bg-slate-400 dark:bg-blue-700" : ""
+          className={`cursor-pointer mb-1 hover:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl ${
+            theme === "dark" ? "bg-blue-500 dark:bg-blue-700" : ""
           }`}
         >
           Dark
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme("system")}
-          className={`cursor-pointer hover:bg-slate-400 hover:dark:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl ${
-            theme === "system" ? "bg-slate-400 dark:bg-blue-700" : ""
+          className={`cursor-pointer hover:bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-xl ${
+            theme === "system" ? "bg-blue-500 dark:bg-blue-700" : ""
           }`}
         >
           System
