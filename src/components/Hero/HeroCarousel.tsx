@@ -113,7 +113,9 @@ export default function HeroCarousel() {
                <Card className="relative bg-emerald-100 dark:bg-gradient-to-t dark:from-black dark:via-blue-950 dark:to-black border-none">
                  <FaArrowUpRightFromSquare
                    className="absolute size-3 lg:size-4 top-2 right-2 lg:top-3 lg:right-4 cursor-pointer transition ease-in-out duration-150 hover:scale-125"
-                   onClick={card.onClick}
+                   onClick={() => {
+                     router.push("/projets");
+                   }}
                  />
                  <CardContent className="flex flex-col aspect-square items-center justify-around p-6 gap-4">
                    <Image
@@ -121,7 +123,8 @@ export default function HeroCarousel() {
                      src={card.src}
                      width={800}
                      height={500}
-                     className="rounded-xl"
+                     className="rounded-xl cursor-pointer"
+                     onClick={card.onClick}
                    />
                    <div className="flex flex-col justify-center items-center">
                      <h1 className="pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text text-center text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-slate-800 dark:text-transparent p-4 border-b-2 border-slate-800 dark:border-white">

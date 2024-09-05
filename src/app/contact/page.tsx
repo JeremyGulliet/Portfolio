@@ -38,7 +38,7 @@ export default function Contact() {
           CONTACTEZ-MOI
         </h1>
         <p className="text-md md:text-lg font-bold text-slate-800 dark:text-white text-justify">
-          Je suis disponible pour toutes les opportunitées qui se présenteront à
+          Je suis disponible pour toutes les opportunités qui se présenteront à
           moi. Je peux travailler seul ou en équipe. <br /> <br />
           Vous pouvez me contacter par email ou via LinkedIn.
         </p>

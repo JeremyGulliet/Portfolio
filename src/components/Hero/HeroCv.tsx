@@ -18,11 +18,11 @@ export default function HeroCv() {
           </p>
           <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
             Perfectionnement en React (NextJS, TailwindCSS et différentes
-            librairie) et React Native (Expo).
+            librairies) et React Native (Expo).
           </p>
           <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
             Je réalise différents challenges pour continuer à apprendre sur des
-            plateforme comme Spikes, Frontend Mentor...
+            plateformes comme Spikes, Frontend Mentor...
           </p>
           <Image
             src="/asset/Projets/Programmer-rafiki.png"
@@ -40,9 +40,9 @@ export default function HeroCv() {
       content: (
         <div>
           <p className="text-slate-800 dark:text-white text-sm font-normal mb-8">
-            Après une dizaine d'année dans l'immobilier, j'ai démissioné pour
+            Après une dizaine d'années dans l'immobilier, j'ai démissioné pour
             pouvoir me consacrer à cette reconversion avant de commencer ma
-            formation à la Capsule.
+            formation à La Capsule.
           </p>
 
           <Image

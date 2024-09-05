@@ -27,7 +27,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 85%"],
+    offset: ["start 10%", "end 100%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -44,7 +44,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </h2>
         <p className="text-slate-800 dark:text-white text-sm md:text-base max-w-sm">
           Il y a 1 an, après plus de 10 ans dans le domaine de l'immobilier,
-          j'ai décidé de me reconvertir pour devenir un développeur web et
+          j'ai décidé de me reconvertir pour devenir développeur web et
           mobile.
         </p>
       </div>
