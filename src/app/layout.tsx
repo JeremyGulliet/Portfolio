@@ -44,7 +44,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex flex-col items-center justify-between w-screen h-screen overflow-scroll no-scrollbar">
+          <main className="flex flex-col items-center justify-between w-screen h-screen no-scrollbar">
             <Header />
             {children}
             <Footer />
