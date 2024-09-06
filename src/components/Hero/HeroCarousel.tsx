@@ -90,6 +90,27 @@ export default function HeroCarousel() {
       ),
     },
     {
+      title: "Section Prix",
+      src: "/asset/Projets/Pricing.png",
+      badge: (
+        <div className="flex flex-wrap justify-start items-center gap-2">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            React
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            Next JS
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TypeScript
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TailwindCSS
+          </Badge>
+        </div>
+      ),
+      onClick: () => window.open("https://page-price.vercel.app/", "_blank"),
+    },
+    {
       title: "Tous mes projets",
       src: "/asset/Projets/allproject.jpg",
       badge: <div></div>,

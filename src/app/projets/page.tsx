@@ -72,10 +72,33 @@ export default function Projets() {
         </div>
       ),
     },
+    {
+      title: "Section Prix",
+      description:
+        "Réalisation d'une section prix avec conversion de la devise",
+      src: "/asset/Projets/Pricing plans-rafiki.png",
+      badge: (
+        <div className="flex flex-wrap justify-start items-center gap-2">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            React
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            Next JS
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TypeScript
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TailwindCSS
+          </Badge>
+        </div>
+      ),
+      onClick: () => window.open("https://page-price.vercel.app/", "_blank"),
+    },
   ];
  
   return (
-    <main className=" flex flex-col justify-center items-center w-screen gap-10 px-4 mb-20">
+    <main className=" flex flex-col justify-center items-center w-screen gap-10 px-4 mb-10">
       <div className=" w-screen h-20 md:w-3/6 md:h-36 relative flex flex-col justify-center items-center">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 dark:bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />

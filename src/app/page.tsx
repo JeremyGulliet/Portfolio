@@ -9,6 +9,7 @@ import React from "react";
 
 
 
+
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center lg:flex-row md:w-auto gap-4 px-4 py-6">

@@ -1,5 +1,3 @@
-"use client";
-
 import { SKILL, DATABASE_SKILL, BackendSkill } from "@/app/constants";
 import React, { useState, useEffect } from "react";
 import SkillDataProvider from "./SkillDataProvider";
@@ -42,59 +40,38 @@ const Skills = () => {
     >
       <SkillText />
 
-      <div className="grid grid-cols-7 mt-6 gap-3 sm:gap-5 md:gap-8 ">
+      <div className="grid grid-cols-7 mt-6 gap-3 sm:gap-5 md:gap-8">
         {SKILL.map((image, index) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
             width={isSmallScreen ? image.width / 2 : image.width}
             height={isSmallScreen ? image.height / 2 : image.height}
-            index={index}
-          />
+            skill_name={image.skill_name} index={0}          />
         ))}
       </div>
 
-      <div className="grid grid-cols-5 mt-4 gap-3 sm:gap-5 md:gap-8 ">
+      <div className="grid grid-cols-5 mt-4 gap-3 sm:gap-5 md:gap-8">
         {BackendSkill.map((image, index) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
             width={isSmallScreen ? image.width / 2 : image.width}
             height={isSmallScreen ? image.height / 2 : image.height}
-            index={index}
-          />
+            skill_name={image.skill_name} index={0}          />
         ))}
       </div>
 
-      <div className="grid grid-cols-4 mt-4 gap-3 sm:gap-5 md:gap-8 ">
+      <div className="grid grid-cols-4 mt-4 gap-3 sm:gap-5 md:gap-8">
         {DATABASE_SKILL.map((image, index) => (
           <SkillDataProvider
             key={index}
             src={image.Image}
             width={isSmallScreen ? image.width / 2 : image.width}
             height={isSmallScreen ? image.height / 2 : image.height}
-            index={index}
-          />
+            skill_name={image.skill_name} index={0}          />
         ))}
       </div>
-
-      {/* <div className="w-screen h-screen absolute">
-        {isLightMode ? (
-          <div className="w-full h-full z-[-10] absolute bg-slate-300 rounded-xl"></div>
-        ) : (
-          <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
-            <video
-              className="w-full h-auto"
-              preload="false"
-              playsInline
-              loop
-              muted
-              autoPlay
-              src="/asset/cards-video.webm"
-            />
-          </div>
-        )}
-      </div> */}
     </section>
   );
 };
