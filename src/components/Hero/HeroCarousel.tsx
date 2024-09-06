@@ -88,6 +88,8 @@ export default function HeroCarousel() {
           </Badge>
         </div>
       ),
+      onClick: () =>
+        window.open("https://portfolio-jeremy-gulliet.vercel.app/", "_blank"),
     },
     {
       title: "Section Prix",

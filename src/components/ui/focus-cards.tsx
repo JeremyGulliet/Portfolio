@@ -42,7 +42,7 @@ export const Card = React.memo(
         )}
       >
         <div>
-          <h1 className="mb-4 text-xl md:text-4xl font-bold text-white">
+          <h1 className="mb-4 text-xl md:text-4xl font-bold text-white border-b-2 pb-4">
             {card.title}
           </h1>
           <p className="text-md font-semibold text-white mb-4">
