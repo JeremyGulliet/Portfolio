@@ -57,6 +57,28 @@ export default function HeroCarousel() {
         ),
     },
     {
+      title: "Landing Page",
+      src: "/asset/Projets/LandingPage-Spikes.png",
+      badge: (
+        <div className="flex flex-wrap justify-start items-center gap-2">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            React
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            Next JS
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TypeScript
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TailwindCSS
+          </Badge>
+        </div>
+      ),
+      onClick: () =>
+        window.open("https://landing-page-spikes.vercel.app/", "_blank"),
+    },
+    {
       title: "Jeu du serpent",
       src: "/asset/Projets/Snake.png",
       badge: (

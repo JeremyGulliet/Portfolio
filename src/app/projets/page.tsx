@@ -95,6 +95,29 @@ export default function Projets() {
       ),
       onClick: () => window.open("https://page-price.vercel.app/", "_blank"),
     },
+    {
+      title: "Landing Page",
+      description: "Réalisation d'une landing page pour une entreprise fictive",
+      src: "/asset/Projets/Landing page-rafiki.png",
+      badge: (
+        <div className="flex flex-wrap justify-start items-center gap-2">
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            React
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            Next JS
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TypeScript
+          </Badge>
+          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+            TailwindCSS
+          </Badge>
+        </div>
+      ),
+      onClick: () =>
+        window.open("https://landing-page-spikes.vercel.app/", "_blank"),
+    },
   ];
  
   return (
