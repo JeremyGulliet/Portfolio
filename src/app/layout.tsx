@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-jeremy-gulliet.vercel.app/"),
   title: "Portfolio - Accueil",
   description: "Page accueil du Portfolio de Jérémy GULLIET",
-  keywords: "application, web, nextjs, portfolio",
+  authors: [{ name: "Jérémy GULLIET" }],
+  keywords: "application, web, nextjs, portfolio, jérémy, gulliet, projet, développeur",
   openGraph: {
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
