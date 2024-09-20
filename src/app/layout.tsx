@@ -39,6 +39,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col items-center justify-between bg-emerald-50 dark:bg-gradient-to-r dark:from-black  dark:via-blue-950  dark:to-black ">
+       {/* Google Tag Manager (noscript) */}
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN76QMBG"
+height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+{/* End Google Tag Manager (noscript) */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
