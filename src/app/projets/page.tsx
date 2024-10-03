@@ -13,20 +13,20 @@ export default function Projets() {
         "Application mobile qui permet d'avoir son dressing à portée de main et de générer des tenues aléatoirement.",
       src: "/asset/Projets/dressing.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React Native / Expo
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Redux
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             ExpressJS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             MongoDB
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Mongoose
           </Badge>
         </div>
@@ -34,7 +34,7 @@ export default function Projets() {
       onClick: () =>
         window.open(
           "https://www.linkedin.com/posts/j%C3%A9r%C3%A9my-gulliet-1ba063268_dresscode-version-2-hello-voici-activity-7206633007917449218-UOHA?utm_source=share&utm_medium=member_desktop",
-          "_blank"
+          "_blank",
         ),
     },
     {
@@ -42,8 +42,8 @@ export default function Projets() {
       description: "Le jeu qui nous a accompagné sur nos Nokia 3310.",
       src: "/asset/Projets/Dragon-rafiki.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
         </div>
@@ -56,17 +56,17 @@ export default function Projets() {
       description: "Premier projet web en solo",
       src: "/asset/Projets/Portfolio-rafiki.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Next JS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TypeScript
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TailwindCSS
           </Badge>
         </div>
@@ -78,17 +78,17 @@ export default function Projets() {
         "Réalisation d'une section prix avec conversion de la devise",
       src: "/asset/Projets/Pricing plans-rafiki.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Next JS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TypeScript
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TailwindCSS
           </Badge>
         </div>
@@ -100,23 +100,46 @@ export default function Projets() {
       description: "Réalisation d'une landing page pour une entreprise fictive",
       src: "/asset/Projets/Landing page-rafiki.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Next JS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TypeScript
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TailwindCSS
           </Badge>
         </div>
       ),
       onClick: () =>
         window.open("https://landing-page-spikes.vercel.app/", "_blank"),
+    },
+    {
+      title: "Page Produit",
+      description: "Réalisation d'une page produit pour une entreprise fictive",
+      src: "/asset/Projets/Product presentation-rafiki.png",
+      badge: (
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            React
+          </Badge>
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            Next JS
+          </Badge>
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            TypeScript
+          </Badge>
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            TailwindCSS
+          </Badge>
+        </div>
+      ),
+      onClick: () =>
+        window.open("https://page-produit-spikes.vercel.app/", "_blank"),
     },
   ];
  

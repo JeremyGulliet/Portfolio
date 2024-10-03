@@ -32,20 +32,20 @@ export default function HeroCarousel() {
       title: "DressCode",
       src: "/asset/Projets/Dresscode2.jpeg",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React Native / Expo
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Redux
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             ExpressJS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             MongoDB
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Mongoose
           </Badge>
         </div>
@@ -53,24 +53,24 @@ export default function HeroCarousel() {
       onClick: () =>
         window.open(
           "https://www.linkedin.com/posts/j%C3%A9r%C3%A9my-gulliet-1ba063268_dresscode-version-2-hello-voici-activity-7206633007917449218-UOHA?utm_source=share&utm_medium=member_desktop",
-          "_blank"
+          "_blank",
         ),
     },
     {
       title: "Landing Page",
       src: "/asset/Projets/LandingPage-Spikes.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Next JS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TypeScript
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TailwindCSS
           </Badge>
         </div>
@@ -82,8 +82,8 @@ export default function HeroCarousel() {
       title: "Jeu du serpent",
       src: "/asset/Projets/Snake.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
         </div>
@@ -95,17 +95,17 @@ export default function HeroCarousel() {
       title: "Portfolio",
       src: "/asset/Projets/Contact.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Next JS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TypeScript
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TailwindCSS
           </Badge>
         </div>
@@ -117,22 +117,44 @@ export default function HeroCarousel() {
       title: "Section Prix",
       src: "/asset/Projets/Pricing.png",
       badge: (
-        <div className="flex flex-wrap justify-start items-center gap-2">
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             React
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             Next JS
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TypeScript
           </Badge>
-          <Badge className="bg-emerald-300 dark:bg-blue-500 text-slate-800 dark:text-white rounded-xl">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
             TailwindCSS
           </Badge>
         </div>
       ),
       onClick: () => window.open("https://page-price.vercel.app/", "_blank"),
+    },
+    {
+      title: "Page Produit",
+      src: "/asset/Projets/PageProduit.png",
+      badge: (
+        <div className="flex flex-wrap items-center justify-start gap-2">
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            React
+          </Badge>
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            Next JS
+          </Badge>
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            TypeScript
+          </Badge>
+          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
+            TailwindCSS
+          </Badge>
+        </div>
+      ),
+      onClick: () =>
+        window.open("https://page-produit-spikes.vercel.app/", "_blank"),
     },
     {
       title: "Tous mes projets",

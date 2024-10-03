@@ -12,9 +12,8 @@ export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const handleClick = () => {
-      router.push('/');
-    };
-  
+    router.push("/");
+  };
 
   const linkStyle = (path: string) =>
     `flex justify-center items-center w-40 py-3 ${
@@ -24,25 +23,25 @@ export default function Header() {
     }`;
 
   return (
-    <header className="flex justify-between items-center py-6 w-screen font-bold dark:text-white ">
+    <header className="flex w-screen items-center justify-between py-6 font-bold dark:text-white">
       {/* Menu réactif visible seulement sur les écrans inférieurs à md */}
-      <div className="md:hidden ml-4">
+      <div className="ml-4 md:hidden">
         <ResponsiveMenu />
       </div>
-      
-          <Image
-            alt="logo"
-            src="/asset/Logo/Trif.png"
-            width={80}
-            height={80}
-            priority={true}
-        className="hidden md:inline md:ml-20 w-auto h-auto cursor-pointer"
+
+      <Image
+        alt="logo"
+        src="/asset/Logo/Trif.png"
+        width={80}
+        height={80}
+        priority={true}
+        className="hidden h-auto w-auto cursor-pointer md:ml-20 md:inline"
         onClick={handleClick}
-          />
-     
+      />
+
       {/* Navigation visible seulement sur les écrans md et plus */}
-      <nav className="border-2 border-emerald-300 dark:shadow-lg dark:shadow-indigo-300/50 dark:border-2 dark:border-white rounded-full py-1 hidden md:inline md:w-96 lg:inline lg:w-1/3">
-        <ul className="flex justify-center items-center gap-2">
+      <nav className="hidden rounded-full border-2 border-emerald-300 py-1 dark:border-2 dark:border-white dark:shadow-lg dark:shadow-indigo-300/50 md:inline md:w-96 lg:inline lg:w-1/3">
+        <ul className="flex items-center justify-center gap-2">
           <li className={linkStyle("/")}>
             <Link href="/">Accueil</Link>
           </li>
