@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="flex flex-col justify-center items-center  gap-20 md:flex-row md:gap-10 lg:gap-24">
+    <main className="flex flex-col justify-center items-center gap-20 md:flex-row md:gap-10 lg:gap-24 py-10">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"

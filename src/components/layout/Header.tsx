@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   const linkStyle = (path: string) =>
-    `flex justify-center items-center w-40 py-3 ${
+    `flex justify-center items-center text-sm xl:text-base w-40 py-3 ${
       pathname === path
         ? "bg-emerald-300 dark:bg-blue-400 rounded-3xl w-40 py-3 mx-1 text-slate-800 dark:text-white"
         : "transition ease-in-out delay-150 hover:scale-90 hover:bg-emerald-400 opacity-60 dark:hover:bg-blue-400 rounded-3xl w-40 py-3 mx-1"
@@ -32,8 +32,8 @@ export default function Header() {
       <Image
         alt="logo"
         src="/asset/Logo/Trif.png"
-        width={80}
-        height={80}
+        width={50}
+        height={50}
         priority={true}
         className="hidden h-auto w-auto cursor-pointer md:ml-20 md:inline"
         onClick={handleClick}
