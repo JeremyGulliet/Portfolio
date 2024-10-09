@@ -8,205 +8,103 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { useRouter } from "next/navigation";
+import cardsData from "./data.json"; // Importer les données
 
 export default function HeroCarousel() {
   const router = useRouter();
-
-   const plugin = React.useRef(
-     Autoplay({ delay: 3000, stopOnInteraction: false })
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [carouselApi, setCarouselApi] = React.useState<CarouselApi | null>(
+    null,
   );
 
-   type CardType = {
-     title: string;
-     src: string;
-     badge: JSX.Element;
-     onClick?: () => void;
-   };
-  
-  const cards: CardType[] = [
-    {
-      title: "DressCode",
-      src: "/asset/Projets/Dresscode2.jpeg",
-      badge: (
-        <div className="flex flex-wrap items-center justify-start gap-2">
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            React Native / Expo
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            Redux
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            ExpressJS
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            MongoDB
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            Mongoose
-          </Badge>
-        </div>
-      ),
-      onClick: () =>
-        window.open(
-          "https://www.linkedin.com/posts/j%C3%A9r%C3%A9my-gulliet-1ba063268_dresscode-version-2-hello-voici-activity-7206633007917449218-UOHA?utm_source=share&utm_medium=member_desktop",
-          "_blank",
-        ),
-    },
-    {
-      title: "Landing Page",
-      src: "/asset/Projets/LandingPage-Spikes.png",
-      badge: (
-        <div className="flex flex-wrap items-center justify-start gap-2">
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            React
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            Next JS
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TypeScript
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TailwindCSS
-          </Badge>
-        </div>
-      ),
-      onClick: () =>
-        window.open("https://landing-page-spikes.vercel.app/", "_blank"),
-    },
-    {
-      title: "Jeu du serpent",
-      src: "/asset/Projets/Snake.png",
-      badge: (
-        <div className="flex flex-wrap items-center justify-start gap-2">
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            React
-          </Badge>
-        </div>
-      ),
-      onClick: () =>
-        window.open("https://snake-sepia-chi.vercel.app", "_blank"),
-    },
-    {
-      title: "Portfolio",
-      src: "/asset/Projets/Contact.png",
-      badge: (
-        <div className="flex flex-wrap items-center justify-start gap-2">
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            React
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            Next JS
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TypeScript
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TailwindCSS
-          </Badge>
-        </div>
-      ),
-      onClick: () =>
-        window.open("https://portfolio-jeremy-gulliet.vercel.app/", "_blank"),
-    },
-    {
-      title: "Section Prix",
-      src: "/asset/Projets/Pricing.png",
-      badge: (
-        <div className="flex flex-wrap items-center justify-start gap-2">
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            React
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            Next JS
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TypeScript
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TailwindCSS
-          </Badge>
-        </div>
-      ),
-      onClick: () => window.open("https://page-price.vercel.app/", "_blank"),
-    },
-    {
-      title: "Page Produit",
-      src: "/asset/Projets/PageProduit.png",
-      badge: (
-        <div className="flex flex-wrap items-center justify-start gap-2">
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            React
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            Next JS
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TypeScript
-          </Badge>
-          <Badge className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white">
-            TailwindCSS
-          </Badge>
-        </div>
-      ),
-      onClick: () =>
-        window.open("https://page-produit-spikes.vercel.app/", "_blank"),
-    },
-    {
-      title: "Tous mes projets",
-      src: "/asset/Projets/allproject.jpg",
-      badge: <div></div>,
-      onClick: () => {
-        router.push("/projets");
-      },
-    },
-  ];
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false }),
+  );
 
-   return (
-     <Carousel
-       plugins={[plugin.current]}
-       className="max-w-xl"
-       //  onMouseEnter={plugin.current.stop}
-       //  onMouseLeave={plugin.current.reset}
-     >
-       <CarouselContent>
-         {cards.map((card, index) => (
-           <CarouselItem key={index}>
-             <div className="p-1">
-               <Card className="relative bg-emerald-100 dark:bg-gradient-to-t dark:from-black dark:via-blue-950 dark:to-black border-none">
-                 <FaArrowUpRightFromSquare
-                   className="absolute size-3 lg:size-4 top-2 right-2 lg:top-3 lg:right-4 cursor-pointer transition ease-in-out duration-150 hover:scale-125"
-                   onClick={() => {
-                     router.push("/projets");
-                   }}
-                 />
-                 <CardContent className="flex flex-col aspect-square items-center justify-around p-6 gap-4">
-                   <Image
-                     alt="ImageProject"
-                     src={card.src}
-                     width={800}
-                     height={500}
-                     className="rounded-xl cursor-pointer"
-                     onClick={card.onClick}
-                   />
-                   <div className="flex flex-col justify-center items-center">
-                     <h1 className="pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text text-center text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-slate-800 dark:text-transparent p-4 border-b-2 border-slate-800 dark:border-white">
-                       {card.title}
-                     </h1>
-                     <span className="pt-4">{card.badge}</span>
-                   </div>
-                 </CardContent>
-               </Card>
-             </div>
-           </CarouselItem>
-         ))}
-       </CarouselContent>
-       {/* <CarouselPrevious />
-       <CarouselNext /> */}
-     </Carousel>
-   );
+  React.useEffect(() => {
+    if (!carouselApi) return;
+
+    const onSelect = () => {
+      setActiveIndex(carouselApi.selectedScrollSnap());
+    };
+
+    carouselApi.on("select", onSelect);
+    onSelect();
+
+    return () => {
+      carouselApi.off("select", onSelect);
+    };
+  }, [carouselApi]);
+
+  return (
+    <div className="relative">
+      <Carousel
+        plugins={[plugin.current]}
+        className="max-w-xl"
+        setApi={setCarouselApi}
+      >
+        <CarouselContent>
+          {cardsData.map((card, index) => (
+            <CarouselItem key={index}>
+              <div className="p-1">
+                <Card className="relative border-none bg-emerald-100 dark:bg-gradient-to-t dark:from-black dark:via-blue-950 dark:to-black">
+                  <FaArrowUpRightFromSquare
+                    className="absolute right-2 top-2 size-3 cursor-pointer transition duration-150 ease-in-out hover:scale-125 lg:right-4 lg:top-3 lg:size-4"
+                    onClick={() => {
+                      router.push("/projets");
+                    }}
+                  />
+                  <CardContent className="flex aspect-square flex-col items-center justify-around gap-4 p-6">
+                    <Image
+                      alt="ImageProject"
+                      src={card.src}
+                      width={800}
+                      height={500}
+                      className="cursor-pointer rounded-xl"
+                      onClick={() => window.open(card.link, "_blank")}
+                    />
+                    <div className="flex flex-col items-center justify-center">
+                      <h1 className="pointer-events-none z-10 whitespace-pre-wrap border-b-2 border-slate-800 from-blue-200 via-blue-400 to-blue-600 p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:border-white dark:bg-gradient-to-b dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl">
+                        {card.title}
+                      </h1>
+                      <span className="pt-4">
+                        <div className="flex flex-wrap items-center justify-start gap-2">
+                          {card.badges.map((badge, badgeIndex) => (
+                            <Badge
+                              key={badgeIndex}
+                              className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white"
+                            >
+                              {badge}
+                            </Badge>
+                          ))}
+                        </div>
+                      </span>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        {/* <CarouselPrevious />
+        <CarouselNext /> */}
+        <div className="absolute md:bottom-4 left-1/2 flex -translate-x-1/2 transform space-x-2">
+          {cardsData.map((_, index) => (
+            <div
+              key={index}
+              className={`h-2 w-2 rounded-full ${
+                index === activeIndex ? "bg-blue-500" : "bg-gray-300"
+              } cursor-pointer`}
+              onClick={() => carouselApi?.scrollTo(index)}
+            />
+          ))}
+        </div>
+      </Carousel>
+    </div>
+  );
 }

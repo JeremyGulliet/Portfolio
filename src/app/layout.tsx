@@ -10,22 +10,62 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-jeremy-gulliet.vercel.app/"),
-  title: "Portfolio - Accueil",
-  description: "Page accueil du Portfolio de Jérémy GULLIET",
+  title: "Portfolio de Jérémy GULLIET - Accueil",
+  description:
+    "La satisfaction client est ma priorité et je suis prêt à vous accompagner dans la construction de tous vos projets.",
   authors: [{ name: "Jérémy GULLIET" }],
-  keywords: "application, web, nextjs, portfolio, jérémy, gulliet, projet, développeur",
+  keywords: [
+    "application",
+    "web",
+    "nextjs",
+    "portfolio",
+    "Jérémy GULLIET",
+    "Jérémy",
+    "Gulliet",
+    "projet",
+    "développeur",
+    "intégrateur",
+    "site web",
+    "landing page",
+    "frontend",
+    "backend",
+    "fullstack",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "React Native",
+    "Node.js",
+    "CSS",
+    "HTML",
+    "UI/UX",
+    "responsive design",
+    "SEO",
+    "accessibilité",
+  ],
   openGraph: {
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
     url: "https://portfolio-jeremy-gulliet.vercel.app/",
-    images: "asset/Projets/Programmer-rafiki.png",
+    images: [
+      {
+        url: "/asset/Projets/Programmer-rafiki.png",
+        width: 800,
+        height: 600,
+        alt: "Hero image of Jérémy GULLIET's portfolio",
+      },
+    ],
     siteName: "Portfolio Jérémy GULLIET",
   },
   twitter: {
     card: "summary_large_image",
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
-    images: "asset/Projets/Programmer-rafiki.png",
+    images: [
+      {
+        url: "/asset/Projets/Programmer-rafiki.png",
+        alt: "Hero image of Jérémy GULLIET's portfolio",
+      },
+    ],
   },
 };
 

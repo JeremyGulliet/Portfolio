@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-
 export const Card = React.memo(
   ({
     card,
@@ -11,16 +10,18 @@ export const Card = React.memo(
     hovered,
     setHovered,
     isMobile,
+    isTablet,
   }: {
     card: any;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
     isMobile: boolean;
+    isTablet: boolean;
   }) => (
     <div
-      onMouseEnter={() => !isMobile && setHovered(index)}
-      onMouseLeave={() => !isMobile && setHovered(null)}
+      onMouseEnter={() => !isMobile && !isTablet && setHovered(index)}
+      onMouseLeave={() => !isMobile && !isTablet && setHovered(null)}
       onClick={card.onClick} // Ajout de la gestion du clic
       className={cn(
         "rounded-xl relative shadow-xl  bg-emerald-100 dark:bg-gradient-to-r from-black  via-blue-950  to-black overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ring-2 ring-emerald-200 dark:ring-white",
@@ -38,7 +39,7 @@ export const Card = React.memo(
       <div
         className={cn(
           "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
-          hovered === index || isMobile ? "opacity-100" : "opacity-0"
+          hovered === index || isMobile || isTablet ? "opacity-100" : "opacity-0"
         )}
       >
         <div>
@@ -66,27 +67,30 @@ type Card = {
 export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isTablet, setIsTablet] = useState<boolean>(false);
 
   useEffect(() => {
-    // Fonction pour vérifier si l'appareil est un mobile
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+    // Fonction pour vérifier si l'appareil est un mobile ou une tablette
+    const checkDeviceType = () => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 768);
+      setIsTablet(width > 768 && width <= 1280);
     };
 
     // Vérifier au montage
-    checkIfMobile();
+    checkDeviceType();
 
     // Mettre à jour lors du redimensionnement
-    window.addEventListener("resize", checkIfMobile);
+    window.addEventListener("resize", checkDeviceType);
 
     // Nettoyage de l'effet
     return () => {
-      window.removeEventListener("resize", checkIfMobile);
+      window.removeEventListener("resize", checkDeviceType);
     };
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
+    <div className="md:grid-cols-2 xl:grid-cols-4 mx-auto grid w-full grid-cols-1 gap-10 2xl:w-5/6 md:px-8">
       {cards.map((card, index) => (
         <Card
           key={card.title}
@@ -95,6 +99,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
           hovered={hovered}
           setHovered={setHovered}
           isMobile={isMobile}
+          isTablet={isTablet}
         />
       ))}
     </div>

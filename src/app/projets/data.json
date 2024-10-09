@@ -1,0 +1,56 @@
+[
+  {
+    "title": "DressCode",
+    "description": "Application mobile qui permet d'avoir son dressing à portée de main et de générer des tenues aléatoirement.",
+    "src": "/asset/Projets/dressing.png",
+    "badges": [
+      "React Native / Expo",
+      "Redux",
+      "ExpressJS",
+      "MongoDB",
+      "Mongoose"
+    ],
+    "link": "https://www.linkedin.com/posts/j%C3%A9r%C3%A9my-gulliet-1ba063268_dresscode-version-2-hello-voici-activity-7206633007917449218-UOHA?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+    "title": "Site professionnel",
+    "description": "Réalisation du site professionel de Laura Mezzone - ghostwriter",
+    "src": "/asset/Projets/Personal site-bro.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://laura-mezzone.vercel.app/"
+  },
+  {
+    "title": "Jeu du serpent",
+    "description": "Le jeu qui nous a accompagné sur nos Nokia 3310.",
+    "src": "/asset/Projets/Dragon-rafiki.png",
+    "badges": ["React"],
+    "link": "https://snake-sepia-chi.vercel.app"
+  },
+  {
+    "title": "Portfolio",
+    "description": "Premier projet web en solo",
+    "src": "/asset/Projets/Portfolio-rafiki.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"]
+  },
+  {
+    "title": "Section Prix",
+    "description": "Réalisation d'une section prix avec conversion de la devise",
+    "src": "/asset/Projets/Pricing plans-rafiki.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://page-price.vercel.app/"
+  },
+  {
+    "title": "Landing Page",
+    "description": "Réalisation d'une landing page pour une entreprise fictive",
+    "src": "/asset/Projets/Landing page-rafiki.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://landing-page-spikes.vercel.app/"
+  },
+  {
+    "title": "Page Produit",
+    "description": "Réalisation d'une page produit pour une entreprise fictive",
+    "src": "/asset/Projets/Product presentation-rafiki.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://page-produit-spikes.vercel.app/"
+  }
+]

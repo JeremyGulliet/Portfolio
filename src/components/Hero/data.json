@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Site professionnel",
+    "src": "/asset/Projets/Laura MEZZONE - Stratégie éditoriale & Ghostwriting LinkedIn.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://laura-mezzone.vercel.app/"
+  },
+  {
+    "title": "DressCode",
+    "src": "/asset/Projets/Dresscode2.jpeg",
+    "badges": [
+      "React Native / Expo",
+      "Redux",
+      "ExpressJS",
+      "MongoDB",
+      "Mongoose"
+    ],
+    "link": "https://www.linkedin.com/posts/j%C3%A9r%C3%A9my-gulliet-1ba063268_dresscode-version-2-hello-voici-activity-7206633007917449218-UOHA?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+    "title": "Landing Page",
+    "src": "/asset/Projets/LandingPage-Spikes.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://landing-page-spikes.vercel.app/"
+  },
+  {
+    "title": "Jeu du serpent",
+    "src": "/asset/Projets/Snake.png",
+    "badges": ["React"],
+    "link": "https://snake-sepia-chi.vercel.app"
+  },
+  {
+    "title": "Portfolio",
+    "src": "/asset/Projets/Contact.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://portfolio-jeremy-gulliet.vercel.app/"
+  },
+  {
+    "title": "Section Prix",
+    "src": "/asset/Projets/Pricing.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://page-price.vercel.app/"
+  },
+  {
+    "title": "Page Produit",
+    "src": "/asset/Projets/PageProduit.png",
+    "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
+    "link": "https://page-produit-spikes.vercel.app/"
+  },
+  {
+    "title": "Tous mes projets",
+    "src": "/asset/Projets/allproject.jpg",
+    "badges": [],
+    "link": "/projets"
+  }
+]
