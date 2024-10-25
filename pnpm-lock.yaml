@@ -89,11 +89,14 @@ devDependencies:
     specifier: ^18
     version: 18.3.0
   eslint:
-    specifier: ^8
+    specifier: ^8.57.0
     version: 8.57.0
   eslint-config-next:
     specifier: 14.2.6
     version: 14.2.6(eslint@8.57.0)(typescript@5.5.4)
+  eslint-plugin-tailwindcss:
+    specifier: ^3.17.4
+    version: 3.17.4(tailwindcss@3.4.10)
   postcss:
     specifier: ^8
     version: 8.4.41
@@ -2380,6 +2383,17 @@ packages:
       semver: 6.3.1
       string.prototype.matchall: 4.0.11
       string.prototype.repeat: 1.0.0
+    dev: true
+
+  /eslint-plugin-tailwindcss@3.17.4(tailwindcss@3.4.10):
+    resolution: {integrity: sha512-gJAEHmCq2XFfUP/+vwEfEJ9igrPeZFg+skeMtsxquSQdxba9XRk5bn0Bp9jxG1VV9/wwPKi1g3ZjItu6MIjhNg==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      tailwindcss: ^3.4.0
+    dependencies:
+      fast-glob: 3.3.2
+      postcss: 8.4.41
+      tailwindcss: 3.4.10
     dev: true
 
   /eslint-scope@7.2.2:

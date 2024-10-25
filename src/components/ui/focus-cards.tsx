@@ -59,6 +59,7 @@ export const Card = React.memo(
 Card.displayName = "Card";
 
 type Card = {
+  id: number
   title: string;
   description: string;
   src: string;

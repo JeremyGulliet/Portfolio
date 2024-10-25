@@ -1,8 +1,11 @@
 [
   {
+    "id": 1,
     "title": "DressCode",
     "description": "Application mobile qui permet d'avoir son dressing à portée de main et de générer des tenues aléatoirement.",
+    "descriptionproject": "Le MVP de DressCode a été réalisé en 2 semaines lors de ma formation à La Capsule. Nous avons utilisé la méthodolgie de travail AGILE pour réaliser cette application à 4.\nL'application permet de gérer son dressing, de générer des tenues aléatoirement en fonction de la météo et de les enregistrer.\n\n  Celle présentée ici est la version 2 que j'ai réalisé après la formation. J'ai modifié le design, ajouté des fonctionnalités comme le mot de passe oublié, le formulaire de contact...\n\n  Depuis, je travaille sur la version 3 qui utilise Expo router qui va permettre de modifier la navigation afin qu'elle soit plus fluide pour une meilleure expérience utilisateur.",
     "src": "/asset/Projets/dressing.png",
+    "srcprojet": "/asset/Projets/Dresscode2.jpeg",
     "badges": [
       "React Native / Expo",
       "Redux",
@@ -13,43 +16,61 @@
     "link": "https://www.linkedin.com/posts/j%C3%A9r%C3%A9my-gulliet-1ba063268_dresscode-version-2-hello-voici-activity-7206633007917449218-UOHA?utm_source=share&utm_medium=member_desktop"
   },
   {
+    "id": 2,
     "title": "Site professionnel",
     "description": "Réalisation du site professionel de Laura Mezzone - ghostwriter",
+    "descriptionproject": "J'ai réalisé ce site pour Laura car elle voulait avoir une vitrine pour proposer ses services de Ghostwrting.\n J'ai choisi de lui créer une landing page pour mettre en avant son offre et son expertise. \n\n Le défi principal était de réaliser un site fluide avec un design épuré et professionnel.",
     "src": "/asset/Projets/Personal site-bro.png",
+    "srcprojet": "/asset/Projets/Laura MEZZONE - Stratégie éditoriale & Ghostwriting LinkedIn.png",
     "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
     "link": "https://laura-mezzone.vercel.app/"
   },
   {
+    "id": 3,
     "title": "Jeu du serpent",
     "description": "Le jeu qui nous a accompagné sur nos Nokia 3310.",
+    "descriptionproject": "La nostalgie du jeu du serpent m'a donné envie de le recréer en React. \n\n  J'ai utilisé une librairie React pour la gestion du canvas et la gestion des collisions. \n\n  Le jeu est jouable sur ordinateur uniquement.",
     "src": "/asset/Projets/Dragon-rafiki.png",
+    "srcprojet": "/asset/Projets/Snake.png",
     "badges": ["React"],
     "link": "https://snake-sepia-chi.vercel.app"
   },
   {
+    "id": 4,
     "title": "Portfolio",
     "description": "Premier projet web en solo",
+    "descriptionproject": "Mon portfolio a été mon premier projet web en solo. J'ai utilisé Next JS pour le SEO et la gestion des pages, TailwindCSS pour le design et TypeScript pour la gestion des types.\n\n  J'ai voulu un design épuré et professionnel pour mettre en avant mes projets et mes compétences. \n\n  J'ai ajouté une page contact pour permettre aux visiteurs de me contacter facilement.",
     "src": "/asset/Projets/Portfolio-rafiki.png",
+    "srcprojet": "/asset/Projets/Contact.png",
     "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"]
   },
   {
+    "id": 5,
     "title": "Section Prix",
     "description": "Réalisation d'une section prix avec conversion de la devise",
+    "descriptionproject": "Dans le cadre d'un challenge Spikes, j'ai réalisé une section prix avec la conversion de la devise. \n\n  J'ai utilisé TailwindCSS pour le design.\n\n  Le but de ce challenge était de s'entrainer à reproduire une maquette Figma et d'ajouter la fonctionnalité de conversion de devise.",
     "src": "/asset/Projets/Pricing plans-rafiki.png",
+    "srcprojet": "/asset/Projets/Pricing.png",
     "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
     "link": "https://page-price.vercel.app/"
   },
   {
+    "id": 6,
     "title": "Landing Page",
     "description": "Réalisation d'une landing page pour une entreprise fictive",
+    "descriptionproject": "Dans le cadre d'un challenge Spikes, j'ai réalisé une landing page pour une entreprise fictive. \n\n  J'ai utilisé TailwindCSS pour le design.\n\n  Le but de ce challenge était de s'entrainer à reproduire une maquette Figma afin de comprendre les bases du design et l'agencement d'une landing page.",
     "src": "/asset/Projets/Landing page-rafiki.png",
+    "srcprojet": "/asset/Projets/LandingPage-Spikes.png",
     "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
     "link": "https://landing-page-spikes.vercel.app/"
   },
   {
+    "id": 7,
     "title": "Page Produit",
     "description": "Réalisation d'une page produit pour une entreprise fictive",
+    "descriptionproject": "Dans le cadre d'un challenge Spikes, j'ai réalisé une page produit.\n J'ai rajouté la page panier, la fonctionnalité pour ajouter et supprimer un article du panier. J'ai également réalisé un caroussel pour l'affichage des différentes photos du produit.",
     "src": "/asset/Projets/Product presentation-rafiki.png",
+    "srcprojet": "/asset/Projets/PageProduit.png",
     "badges": ["React", "Next JS", "TypeScript", "TailwindCSS"],
     "link": "https://page-produit-spikes.vercel.app/"
   }

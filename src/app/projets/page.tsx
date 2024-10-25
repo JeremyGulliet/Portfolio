@@ -4,9 +4,13 @@ import { FocusCards } from "@/components/ui/focus-cards";
 import { Badge } from "@/components/ui/badge";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { SkillTooltip } from "@/components/skills/SkillTooltip";
-import cardsData from "./data.json"; // Importer les données
+import { useRouter } from "next/navigation";
+import cardsData from "./data.json";
 
 export default function Projets() {
+
+  const router = useRouter();
+
   const cards = cardsData.map((card) => ({
     ...card,
     badge: (
@@ -21,7 +25,7 @@ export default function Projets() {
         ))}
       </div>
     ),
-    onClick: () => card.link && window.open(card.link, "_blank"),
+    onClick: () => router.push(`/projets/${card.title}`),
   }));
 
   return (

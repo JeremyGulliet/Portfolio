@@ -74,7 +74,7 @@ export default function HeroPresentation() {
                 <FaGithub className=" size-5 md:size-8 transition ease-in-out duration-150 hover:scale-105" />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/jérémy-gulliet-1ba063268"
+                href="https://www.linkedin.com/in/jérémy-gulliet"
                 target="_blank"
               >
                 <FaLinkedin className="size-5 md:size-8 transition ease-in-out duration-150 hover:scale-105" />
