@@ -79,12 +79,13 @@ export default function HeroPresentation() {
               </Button>
             </div>
             <div className="flex justify-center items-center gap-3 border-t-2 pt-4 border-slate-800 dark:border-white">
-              <Link href="https://github.com/JeremyGulliet" target="_blank">
+              <Link href="https://github.com/JeremyGulliet" target="_blank" aria-label="Github">
                 <FaGithub className=" size-5 md:size-8 transition ease-in-out duration-150 hover:scale-105" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/jérémy-gulliet"
                 target="_blank"
+                aria-label="LinkedIn"
               >
                 <FaLinkedin className="size-5 md:size-8 transition ease-in-out duration-150 hover:scale-105" />
               </Link>

@@ -86,7 +86,7 @@ export default function About() {
         </div>
 
         <Image
-          src="/asset/Moi/me.png"
+          src="/asset/Moi/me.jpeg"
           alt="Photo"
           width={300}
           height={300}

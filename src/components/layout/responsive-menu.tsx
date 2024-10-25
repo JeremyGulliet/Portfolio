@@ -22,43 +22,50 @@ export default function ResponsiveMenu() {
       <SheetTrigger>
         <TiThMenu
           className="h-6 w-6 md:hidden"
-          onClick={() => setIsOpen(true)} // Ouvrir le menu
+          aria-label="Menu"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          data-state="closed"
+          aria-controls="radix-:Rmja:"
+          onClick={() => setIsOpen(true)}
         />
       </SheetTrigger>
       <SheetContent
         side={"left"}
-        className="bg-slate-200 dark:bg-gradient-to-r from-black  via-blue-950  to-black "
+        className="bg-slate-200 from-black via-blue-950 to-black dark:bg-gradient-to-r"
       >
-        <ul className={`flex flex-col justify-center gap-4 dark:text-white ${karla.className}`}>
+        <ul
+          className={`flex flex-col justify-center gap-4 dark:text-white ${karla.className}`}
+        >
           <li className="border-b pb-3">
             <Link href="/" onClick={closeMenu}>
-              <div className="flex justify-start items-center gap-3">
-          <FaHome />
-          <p>Accueil</p>
+              <div className="flex items-center justify-start gap-3">
+                <FaHome />
+                <p>Accueil</p>
               </div>
             </Link>
           </li>
           <li className="border-b pb-3">
             <Link href="/about" onClick={closeMenu}>
-              <div className="flex justify-start items-center gap-3">
-          <FaRegQuestionCircle />
-          <p>A propos</p>
+              <div className="flex items-center justify-start gap-3">
+                <FaRegQuestionCircle />
+                <p>A propos</p>
               </div>
             </Link>
           </li>
           <li className="border-b pb-3">
             <Link href="/projets" onClick={closeMenu}>
-              <div className="flex justify-start items-center gap-3">
-          <FaRegImages />
-          <p>Projets</p>
+              <div className="flex items-center justify-start gap-3">
+                <FaRegImages />
+                <p>Projets</p>
               </div>
             </Link>
           </li>
           <li className="border-b pb-3">
             <Link href="/contact" onClick={closeMenu}>
-              <div className="flex justify-start items-center gap-3">
-          <GrContact />
-          <p>Contact</p>
+              <div className="flex items-center justify-start gap-3">
+                <GrContact />
+                <p>Contact</p>
               </div>
             </Link>
           </li>

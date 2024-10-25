@@ -33,36 +33,45 @@ export const Card = React.memo(
       onMouseLeave={() => !isMobile && !isTablet && setHovered(null)}
       onClick={card.onClick} // Ajout de la gestion du clic
       className={cn(
-        "rounded-xl relative shadow-xl  bg-emerald-100 dark:bg-gradient-to-r from-black  via-blue-950  to-black overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out ring-2 ring-emerald-200 dark:ring-white",
-        hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
-        card.onClick && "cursor-pointer" // Ajout du curseur pointeur si onClick est présent
+        "relative h-60 w-full overflow-hidden rounded-xl bg-emerald-100 from-black via-blue-950 to-black shadow-xl ring-2 ring-emerald-200 transition-all duration-300 ease-out dark:bg-gradient-to-r dark:ring-white md:h-96",
+        hovered !== null && hovered !== index && "scale-[0.98] blur-sm",
+        card.onClick && "cursor-pointer", // Ajout du curseur pointeur si onClick est présent
       )}
     >
       <Image
         src={card.src}
         alt={card.title}
+        loading="lazy"
+        decoding="async"
+        data-nimg="1"
         width={500}
         height={500}
-        className="object-cover absolute inset-0"
+        className="absolute inset-0 object-cover"
       />
       <div
         className={cn(
-          "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
-          hovered === index || isMobile || isTablet ? "opacity-100" : "opacity-0"
+          "absolute inset-0 flex items-end bg-black/50 px-4 py-8 transition-opacity duration-300",
+          hovered === index || isMobile || isTablet
+            ? "opacity-100"
+            : "opacity-0",
         )}
       >
         <div>
-            <h1 className={`${quicksand.className} mb-4 text-xl md:text-4xl font-bold text-white border-b-2 pb-4`}>
+          <h1
+            className={`${quicksand.className} mb-4 border-b-2 pb-4 text-xl font-bold text-white md:text-4xl`}
+          >
             {card.title}
-            </h1>
-            <p className={`${karla.className} text-md font-semibold text-white mb-4`}>
+          </h1>
+          <p
+            className={`${karla.className} text-md mb-4 font-semibold text-white`}
+          >
             {card.description}
-            </p>
+          </p>
           <span>{card.badge}</span>
         </div>
       </div>
     </div>
-  )
+  ),
 );
 
 Card.displayName = "Card";

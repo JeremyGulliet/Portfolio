@@ -12,20 +12,27 @@ export default function Footer() {
   
 
   return (
-    <footer className="flex flex-col justify-center items-center py-6 gap-3">
-      <div className="flex justify-center items-center gap-3 pb-2">
-        <Link href="https://github.com/JeremyGulliet" target="_blank">
-          <FaGithub className=" size-5 md:size-8 transition ease-in-out duration-150 hover:scale-105" />
+    <footer className="flex flex-col items-center justify-center gap-3 py-6">
+      <div className="flex items-center justify-center gap-3 pb-2">
+        <Link
+          href="https://github.com/JeremyGulliet"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <FaGithub className="size-5 transition duration-150 ease-in-out hover:scale-105 md:size-8" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/jérémy-gulliet"
           target="_blank"
+          aria-label="LinkedIn"
         >
-          <FaLinkedin className="size-5 md:size-8 transition ease-in-out duration-150 hover:scale-105" />
+          <FaLinkedin className="size-5 transition duration-150 ease-in-out hover:scale-105 md:size-8" />
         </Link>
       </div>
-      <div className="dark:border-t  dark:border-white pt-2 border-emerald-300 border-t-2">
-        <p className={`${karla.className} dark:text-white text-slate-800 text-bold`}>
+      <div className="border-t-2 border-emerald-300 pt-2 dark:border-t dark:border-white">
+        <p
+          className={`${karla.className} text-bold text-slate-800 dark:text-white`}
+        >
           © {new Date().getFullYear()} Jérémy's Portfolio
         </p>
       </div>
