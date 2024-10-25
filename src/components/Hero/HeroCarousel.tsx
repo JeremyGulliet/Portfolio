@@ -64,6 +64,7 @@ export default function HeroCarousel() {
                 <Card className="relative border-none bg-emerald-100 dark:bg-gradient-to-t dark:from-black dark:via-blue-950 dark:to-black">
                   <FaArrowUpRightFromSquare
                     className="absolute right-2 top-2 size-3 cursor-pointer transition duration-150 ease-in-out hover:scale-125 lg:right-4 lg:top-3 lg:size-4"
+                    aria-label="Voir"
                     onClick={() => {
                       router.push("/projets");
                     }}
@@ -72,15 +73,18 @@ export default function HeroCarousel() {
                     <Image
                       alt="ImageProject"
                       src={card.src}
+                      loading="lazy"
                       width={800}
                       height={500}
                       className="cursor-pointer rounded-xl"
                       onClick={() => window.open(card.link, "_blank")}
                     />
                     <div className="flex flex-col items-center justify-center">
-                        <h1 className={`${quicksand.className} pointer-events-none z-10 whitespace-pre-wrap border-b-2 border-slate-800 from-blue-200 via-blue-400 to-blue-600 p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:border-white dark:bg-gradient-to-b dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl`}>
+                      <h1
+                        className={`${quicksand.className} pointer-events-none z-10 whitespace-pre-wrap border-b-2 border-slate-800 from-blue-200 via-blue-400 to-blue-600 p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:border-white dark:bg-gradient-to-b dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl`}
+                      >
                         {card.title}
-                        </h1>
+                      </h1>
                       <span className="pt-4">
                         <div className="flex flex-wrap items-center justify-start gap-2">
                           {card.badges.map((badge, badgeIndex) => (
@@ -102,7 +106,7 @@ export default function HeroCarousel() {
         </CarouselContent>
         {/* <CarouselPrevious />
         <CarouselNext /> */}
-        <div className="absolute md:bottom-4 left-1/2 flex -translate-x-1/2 transform space-x-2">
+        <div className="absolute left-1/2 flex -translate-x-1/2 transform space-x-2 md:bottom-4">
           {cardsData.map((_, index) => (
             <div
               key={index}

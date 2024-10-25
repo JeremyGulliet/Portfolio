@@ -26,7 +26,6 @@ export default function ResponsiveMenu() {
           aria-haspopup="dialog"
           aria-expanded="false"
           data-state="closed"
-          aria-controls="radix-:Rmja:"
           onClick={() => setIsOpen(true)}
         />
       </SheetTrigger>

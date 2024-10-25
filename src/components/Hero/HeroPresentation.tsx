@@ -33,7 +33,7 @@ export default function HeroPresentation() {
                     Jérémy GULLIET
                     </p>
                   <Link href="/about">
-                    <FaArrowUpRightFromSquare className="cursor-pointer size-3 lg:size-4 transition ease-in-out duration-150 hover:scale-125" />
+                    <FaArrowUpRightFromSquare className="cursor-pointer size-3 lg:size-4 transition ease-in-out duration-150 hover:scale-125" aria-label="Voir" />
                   </Link>
                 </div>
                 <p className={`${quicksand.className} text-xl lg:text-3xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text leading-none tracking-tighter text-slate-800 dark:text-transparent pb-2`}>
