@@ -1,7 +1,16 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import {Karla, Quicksand} from "next/font/google";
 import { cn } from "@/lib/utils";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
+
+const karla = Karla({
+  subsets: ["latin"],
+});
 
 export const Card = React.memo(
   ({
@@ -43,12 +52,12 @@ export const Card = React.memo(
         )}
       >
         <div>
-          <h1 className="mb-4 text-xl md:text-4xl font-bold text-white border-b-2 pb-4">
+            <h1 className={`${quicksand.className} mb-4 text-xl md:text-4xl font-bold text-white border-b-2 pb-4`}>
             {card.title}
-          </h1>
-          <p className="text-md font-semibold text-white mb-4">
+            </h1>
+            <p className={`${karla.className} text-md font-semibold text-white mb-4`}>
             {card.description}
-          </p>
+            </p>
           <span>{card.badge}</span>
         </div>
       </div>

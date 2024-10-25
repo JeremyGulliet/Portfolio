@@ -11,6 +11,15 @@ import { IoIosDocument, IoIosPhonePortrait } from "react-icons/io";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Karla, Quicksand } from "next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
 
 export default function HeroPresentation() {
     return (
@@ -20,14 +29,14 @@ export default function HeroPresentation() {
             <CardTitle className="flex justify-between items-center border-b-2 pb-3 border-slate-800 dark:border-white">
               <div className="flex flex-col w-full">
                 <div className="flex justify-between items-center">
-                  <p className="text-3xl lg:text-4xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text  font-bold leading-none tracking-tighter text-slate-800 dark:text-transparent pb-2">
+                    <p className={`${quicksand.className} text-3xl lg:text-4xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text font-bold leading-none tracking-tighter text-slate-800 dark:text-transparent pb-2`}>
                     Jérémy GULLIET
-                  </p>
+                    </p>
                   <Link href="/about">
                     <FaArrowUpRightFromSquare className="cursor-pointer size-3 lg:size-4 transition ease-in-out duration-150 hover:scale-125" />
                   </Link>
                 </div>
-                <p className="text-xl lg:text-3xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text  leading-none tracking-tighter text-slate-800 dark:text-transparent pb-2">
+                <p className={`${quicksand.className} text-xl lg:text-3xl pointer-events-none z-10 whitespace-pre-wrap dark:bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600 dark:bg-clip-text leading-none tracking-tighter text-slate-800 dark:text-transparent pb-2`}>
                   Développeur web et mobile
                 </p>
               </div>
@@ -37,10 +46,10 @@ export default function HeroPresentation() {
               présenteront à moi.
             </CardDescription> */}
           </CardHeader>
-          <CardContent className=" text-base lg:text-xl dark:text-white text-slate-800">
+            <CardContent className={`${karla.className} text-base lg:text-xl dark:text-white text-slate-800`}>
             La satisfaction client est ma priorité et je suis prêt à vous
             accompagner dans la construction de tous vos projets.
-          </CardContent>
+            </CardContent>
           <CardFooter className="flex flex-col justify-center items-center gap-6 pt-2 lg:pt-2 ">
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 lg:pb-3">
               <Button
@@ -52,7 +61,7 @@ export default function HeroPresentation() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="mr-2">Mon CV</p>
+                    <p className={`${karla.className} mr-2 text-lg`}>Mon CV</p>
                   <IoIosDocument />
                 </Link>
               </Button>
@@ -64,7 +73,7 @@ export default function HeroPresentation() {
                   href="/contact"
                   rel="noopener noreferrer"
                 >
-                  <p className="mr-2">Contactez-moi</p>
+                    <p className={`${karla.className} mr-2 text-lg`}>Contactez-moi</p>
                   <IoIosPhonePortrait />
                 </Link>
               </Button>

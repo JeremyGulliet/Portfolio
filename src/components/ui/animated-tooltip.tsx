@@ -8,6 +8,11 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import { Karla } from "next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
 
 export const AnimatedTooltip = ({
   items,
@@ -70,7 +75,7 @@ export const AnimatedTooltip = ({
               >
                 <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px dark:bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
                 <div className="absolute left-10 w-[40%] z-30 -bottom-px  dark:bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
-                <div className="font-bold dark:text-white text-slate-800 relative z-30 text-base">
+                <div className={`${karla.className} font-bold dark:text-white text-slate-800 relative z-30 text-base`}>
                   {item.name}
                 </div>
                 {/* <div className="text-white text-xs">{item.designation}</div> */}

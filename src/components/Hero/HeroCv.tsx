@@ -1,6 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Timeline } from "../ui/timeline";
 import Image from "next/image";
+import { Karla} from "next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
+
 
 export default function HeroCv() {
 
@@ -8,7 +14,7 @@ export default function HeroCv() {
     {
       title: "2024",
       content: (
-        <div>
+        <div className={`${karla.className}`}>
           <p className="mb-8 text-sm font-normal text-slate-800 dark:text-white">
             Réalisation du site professionnel de Laura Mezzone - Ghostwriter
           </p>
@@ -41,7 +47,7 @@ export default function HeroCv() {
     {
       title: "2023 et Avant",
       content: (
-        <div>
+        <div className={`${karla.className}`}>
           <p className="mb-2 text-sm font-normal text-slate-800 dark:text-white">
             Après une dizaine d'années dans l'immobilier, j'ai démissioné pour
             pouvoir me consacrer à cette reconversion avant de commencer ma

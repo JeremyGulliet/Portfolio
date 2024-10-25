@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import SkillDataProvider from "./SkillDataProvider";
 import SkillText from "./SkillText";
 
+
 const Skills = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isLightMode, setIsLightMode] = useState(false);

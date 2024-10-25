@@ -3,6 +3,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Karla, Quicksand } from "next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
 
 const SkillText = () => {
   const { ref, inView } = useInView({
@@ -19,7 +28,7 @@ const SkillText = () => {
     <div className="w-full h-auto flex flex-col items-center justify-center border-b-2 border-slate-800 dark:border-white pb-4">
       <motion.h1
         ref={ref}
-        className="text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl text-center font-bold dark:font-semibold dark:text-transparent z-[20] dark:bg-clip-text text-slate-800 dark:bg-gradient-to-r from-cyan-500 to-indigo-500 dark:hover:bg-gradient-to-r dark:hover:from-indigo-500 dark:hover:to-cyan-500"
+        className={`${quicksand.className} text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl text-center font-bold dark:font-semibold dark:text-transparent z-[20] dark:bg-clip-text text-slate-800 dark:bg-gradient-to-r from-cyan-500 to-indigo-500 dark:hover:bg-gradient-to-r dark:hover:from-indigo-500 dark:hover:to-cyan-500`}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={titleVariants}

@@ -1,7 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Karla } from "next/font/google";
 import Link from "next/link";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
 
 export default function Footer() {
   
@@ -20,7 +25,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="dark:border-t  dark:border-white pt-2 border-emerald-300 border-t-2">
-        <p className="dark:text-white text-slate-800 text-bold">
+        <p className={`${karla.className} dark:text-white text-slate-800 text-bold`}>
           © {new Date().getFullYear()} Jérémy's Portfolio
         </p>
       </div>

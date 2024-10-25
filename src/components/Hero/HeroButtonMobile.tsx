@@ -1,6 +1,15 @@
 import { IoIosDocument, IoIosPhonePortrait } from "react-icons/io";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { Karla, Quicksand } from "next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
 
 export function HeroButtonMobile() {
     
@@ -16,7 +25,7 @@ export function HeroButtonMobile() {
             rel="noopener noreferrer"
             className="dark:text-white dark:font-normal text-slate-800 font-semibold flex transition ease-in-out duration-150 hover:scale-105 "
           >
-            <p className="mr-2">Mon CV</p>
+            <p className={`${karla.className} mr-2 text-lg`}>Mon CV</p>
             <IoIosDocument />
           </Link>
         </Button>
@@ -29,7 +38,7 @@ export function HeroButtonMobile() {
             rel="noopener noreferrer"
             className="dark:text-white dark:font-normal text-slate-800 font-semibold flex transition ease-in-out duration-150 hover:scale-105 "
           >
-            <p className="mr-2">Contactez-moi</p>
+            <p className={`${karla.className} mr-2 text-lg`}>Contactez-moi</p>
             <IoIosPhonePortrait />
           </Link>
         </Button>

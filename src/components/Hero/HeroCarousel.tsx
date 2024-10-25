@@ -1,6 +1,7 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Karla, Quicksand } from "next/font/google";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -13,7 +14,15 @@ import {
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { useRouter } from "next/navigation";
-import cardsData from "./data.json"; // Importer les données
+import cardsData from "./data.json";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
 
 export default function HeroCarousel() {
   const router = useRouter();
@@ -69,15 +78,15 @@ export default function HeroCarousel() {
                       onClick={() => window.open(card.link, "_blank")}
                     />
                     <div className="flex flex-col items-center justify-center">
-                      <h1 className="pointer-events-none z-10 whitespace-pre-wrap border-b-2 border-slate-800 from-blue-200 via-blue-400 to-blue-600 p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:border-white dark:bg-gradient-to-b dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl">
+                        <h1 className={`${quicksand.className} pointer-events-none z-10 whitespace-pre-wrap border-b-2 border-slate-800 from-blue-200 via-blue-400 to-blue-600 p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:border-white dark:bg-gradient-to-b dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl`}>
                         {card.title}
-                      </h1>
+                        </h1>
                       <span className="pt-4">
                         <div className="flex flex-wrap items-center justify-start gap-2">
                           {card.badges.map((badge, badgeIndex) => (
                             <Badge
                               key={badgeIndex}
-                              className="rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white"
+                              className={`${karla.className} rounded-xl bg-emerald-300 text-slate-800 dark:bg-blue-500 dark:text-white`}
                             >
                               {badge}
                             </Badge>

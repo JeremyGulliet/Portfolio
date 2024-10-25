@@ -6,22 +6,28 @@ import HeroCv from "@/components/Hero/HeroCv";
 import HeroPresentation from "@/components/Hero/HeroPresentation";
 import Skills from "@/components/skills/Skills";
 import React from "react";
-
-
-
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center lg:flex-row md:w-auto gap-4 px-4 py-6">
-      <div className="flex flex-col justify-start w-80 md:w-auto mt-2 lg:mt-0 gap-3 ">
-        <HeroPresentation />
-        <HeroCarousel />
-        <Skills />
-      </div>
-      <div className="flex">
-        <HeroCv />
-      </div>
-      <HeroButtonMobile />
-    </main>
+    <AnimatePresence mode="wait">
+      <motion.main
+        className="flex flex-col items-center justify-center gap-4 px-4 py-6 md:w-auto lg:flex-row"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="mt-2 flex w-80 flex-col justify-start gap-3 md:w-auto lg:mt-0">
+          <HeroPresentation />
+          <HeroCarousel />
+          <Skills />
+        </div>
+        <div className="flex">
+          <HeroCv />
+        </div>
+        <HeroButtonMobile />
+      </motion.main>
+    </AnimatePresence>
   );
 }

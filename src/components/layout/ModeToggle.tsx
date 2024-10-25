@@ -3,6 +3,7 @@
 import * as React from "react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
+import { Karla } from "next/font/google";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +12,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme(); // Obtenez le thème actuel
@@ -30,12 +35,12 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="rounded-xl bg-emerald-300 dark:text-white dark:bg-black "
+        className={`rounded-xl bg-emerald-300 dark:text-white dark:bg-black ${karla.className}`}
       >
         <DropdownMenuItem
           onClick={() => setTheme("light")}
           className={`cursor-pointer mb-1 hover:bg-emerald-200 hover:dark:bg-gradient-to-r dark:from-blue-500 dark:via-blue-600 dark:to-blue-700 rounded-xl ${
-            theme === "light" ? "bg-emerald-100" : ""
+        theme === "light" ? "bg-emerald-100" : ""
           }`}
         >
           Light
@@ -43,7 +48,7 @@ export function ModeToggle() {
         <DropdownMenuItem
           onClick={() => setTheme("dark")}
           className={`cursor-pointer mb-1 hover:bg-emerald-200 hover:dark:bg-gradient-to-r dark:from-blue-500 dark:via-blue-600 dark:to-blue-700 rounded-xl ${
-            theme === "dark" ? "dark:bg-blue-700" : ""
+        theme === "dark" ? "dark:bg-blue-700" : ""
           }`}
         >
           Dark
@@ -51,7 +56,7 @@ export function ModeToggle() {
         <DropdownMenuItem
           onClick={() => setTheme("system")}
           className={`cursor-pointer mb-1 hover:bg-emerald-200 hover:dark:bg-gradient-to-r dark:from-blue-500 dark:via-blue-600 dark:to-blue-700 rounded-xl ${
-            theme === "system" ? "bg-emerald-100 dark:bg-blue-700" : ""
+        theme === "system" ? "bg-emerald-100 dark:bg-blue-700" : ""
           }`}
         >
           System

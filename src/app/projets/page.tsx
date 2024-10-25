@@ -6,6 +6,12 @@ import { SparklesCore } from "@/components/ui/sparkles";
 import { SkillTooltip } from "@/components/skills/SkillTooltip";
 import { useRouter } from "next/navigation";
 import cardsData from "./data.json";
+import { Quicksand } from "next/font/google";
+import { AnimatePresence, motion } from "framer-motion";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+});
 
 export default function Projets() {
 
@@ -29,36 +35,44 @@ export default function Projets() {
   }));
 
   return (
-    <main className="mb-10 flex w-screen flex-col items-center justify-center gap-10 px-4">
-      <div className="relative flex h-20 w-screen flex-col items-center justify-center md:h-36 2xl:w-5/6">
-        {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 from-transparent via-indigo-500 to-transparent blur-sm dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-20 top-0 h-px w-3/4 from-transparent via-indigo-500 to-transparent dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-60 top-0 h-[5px] w-1/4 from-transparent via-sky-500 to-transparent blur-sm dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-60 top-0 h-px w-1/4 from-transparent via-sky-500 to-transparent dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-20 bottom-0 h-[2px] w-3/4 from-transparent via-indigo-500 to-transparent blur-sm dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-20 bottom-0 h-px w-3/4 from-transparent via-indigo-500 to-transparent dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-60 bottom-0 h-[5px] w-1/4 from-transparent via-sky-500 to-transparent blur-sm dark:bg-gradient-to-r" />
-        <div className="absolute inset-x-60 bottom-0 h-px w-1/4 from-transparent via-sky-500 to-transparent dark:bg-gradient-to-r" />
+    <AnimatePresence mode="wait">
+      <motion.div
+        className="mb-10 flex w-screen flex-col items-center justify-center gap-10 px-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2 }}
+      >
+        <div className="relative flex h-20 w-screen flex-col items-center justify-center md:h-36 2xl:w-5/6">
+          {/* Gradients */}
+          <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 from-transparent via-indigo-500 to-transparent blur-sm dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-20 top-0 h-px w-3/4 from-transparent via-indigo-500 to-transparent dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-60 top-0 h-[5px] w-1/4 from-transparent via-sky-500 to-transparent blur-sm dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-60 top-0 h-px w-1/4 from-transparent via-sky-500 to-transparent dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-20 bottom-0 h-[2px] w-3/4 from-transparent via-indigo-500 to-transparent blur-sm dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-20 bottom-0 h-px w-3/4 from-transparent via-indigo-500 to-transparent dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-60 bottom-0 h-[5px] w-1/4 from-transparent via-sky-500 to-transparent blur-sm dark:bg-gradient-to-r" />
+          <div className="absolute inset-x-60 bottom-0 h-px w-1/4 from-transparent via-sky-500 to-transparent dark:bg-gradient-to-r" />
 
-        {/* Core component */}
-        <h1 className="pointer-events-none z-10 whitespace-pre-wrap p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:bg-gradient-to-b dark:from-blue-200 dark:via-blue-400 dark:to-blue-600 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl">
-          MES PROJETS
-        </h1>
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="absolute inset-0 h-full w-full"
-          particleColor="#FFFFFF"
-        />
+          {/* Core component */}
+            <h1 className={`${quicksand.className} pointer-events-none z-10 whitespace-pre-wrap p-4 text-center text-3xl font-bold leading-none tracking-tighter text-slate-800 dark:bg-gradient-to-b dark:from-blue-200 dark:via-blue-400 dark:to-blue-600 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl`}>
+            MES PROJETS
+            </h1>
+          <SparklesCore
+            background="transparent"
+            minSize={0.4}
+            maxSize={1}
+            particleDensity={1200}
+            className="absolute inset-0 h-full w-full"
+            particleColor="#FFFFFF"
+          />
 
-        {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 h-full w-full rounded-xl bg-inherit [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-      </div>
-      <FocusCards cards={cards} />
-      <SkillTooltip />
-    </main>
+          {/* Radial Gradient to prevent sharp edges */}
+          <div className="absolute inset-0 h-full w-full rounded-xl bg-inherit [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        </div>
+        <FocusCards cards={cards} />
+        <SkillTooltip />
+      </motion.div>
+    </AnimatePresence>
   );
 }

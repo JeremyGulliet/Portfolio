@@ -10,6 +10,11 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import { Karla } from "next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+});
 
 interface Props {
   src: string;
@@ -96,11 +101,11 @@ const SkillDataProvider = ({
             exit={{ opacity: 0, scale: 0.6 }}
             style={{
               // translateX: translateX,
-              // rotate: rotate,
-              whiteSpace: "nowrap",
-            }}
-            className="absolute -inset-4 ring-2 flex items-center justify-center px-6 py-2 rounded-xl bg-emerald-300 dark:bg-gradient-to-r dark:from-black dark:via-blue-950 dark:to-black"
-          >
+                // rotate: rotate,
+                whiteSpace: "nowrap",
+              }}
+              className={`absolute -inset-4 ring-2 flex items-center justify-center px-6 py-2 rounded-xl bg-emerald-300 dark:bg-gradient-to-r dark:from-black dark:via-blue-950 dark:to-black ${karla.className}`}
+              >
             <div className="font-bold text-slate-800 dark:text-white text-xs ">
               {skill_name}
             </div>
