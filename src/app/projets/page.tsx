@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import cardsData from "./data.json";
 import { Quicksand } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
+import ProjectsAnimationWrapper from "@/components/wrappers/ProjectsAnimationWrapper";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -35,14 +36,7 @@ export default function Projets() {
   }));
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        className="mb-10 flex w-screen flex-col items-center justify-center gap-10 px-4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 2 }}
-      >
+    <ProjectsAnimationWrapper onClick={(title) => console.log(title)}>
         <div className="relative flex h-20 w-screen flex-col items-center justify-center md:h-36 2xl:w-5/6">
           {/* Gradients */}
           <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 from-transparent via-indigo-500 to-transparent blur-sm dark:bg-gradient-to-r" />
@@ -72,7 +66,6 @@ export default function Projets() {
         </div>
         <FocusCards cards={cards} />
         <SkillTooltip />
-      </motion.div>
-    </AnimatePresence>
+      </ProjectsAnimationWrapper>
   );
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import { SKILL, DATABASE_SKILL, BackendSkill } from "@/app/constants";
 import React, { useState, useEffect } from "react";
 import SkillDataProvider from "./SkillDataProvider";

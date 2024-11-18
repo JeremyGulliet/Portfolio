@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client";
 
-import Skills from "@/components/skills/Skills";
 import { Button } from "@/components/ui/button";
 import { Spotlight } from "@/components/ui/spotlight";
 import { IoIosDocument, IoIosPhonePortrait } from "react-icons/io";
@@ -9,7 +7,7 @@ import { Karla, Quicksand} from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
+import AboutAnimationWrapper from "@/components/wrappers/AboutAnimationWrapper";
 
 const karla = Karla({
   subsets: ["latin"],
@@ -21,14 +19,7 @@ const quicksand = Quicksand({
 
 export default function About() {
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        className="flex flex-col items-center justify-center gap-20 py-10 md:flex-row md:gap-10 lg:gap-24"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
-      >
+    <AboutAnimationWrapper>
         <Spotlight
           className="-top-40 left-0 md:-top-20 md:left-60"
           fill="white"
@@ -94,7 +85,6 @@ export default function About() {
           quality={50}
           className="w-56 rounded-xl grayscale md:mr-10 md:w-64 lg:h-auto lg:w-auto"
         />
-      </motion.div>
-    </AnimatePresence>
+      </AboutAnimationWrapper>
   );
 }

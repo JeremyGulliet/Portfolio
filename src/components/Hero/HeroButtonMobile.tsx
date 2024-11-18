@@ -1,3 +1,5 @@
+"use client";
+
 import { IoIosDocument, IoIosPhonePortrait } from "react-icons/io";
 import { Button } from "../ui/button";
 import Link from "next/link";

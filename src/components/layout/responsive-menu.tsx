@@ -1,75 +1,38 @@
 import { TiThMenu } from "react-icons/ti";
 import { FaHome, FaRegQuestionCircle, FaRegImages } from "react-icons/fa";
 import { GrContact } from "react-icons/gr";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "../ui/sheet";
 import { Karla } from "next/font/google";
 import Link from "next/link";
-import { useState } from "react";
+import ResponsiveMenuWrapper from "../wrappers/ResponsiveMenuWrapper";
 
 const karla = Karla({
   subsets: ["latin"],
 });
 
 export default function ResponsiveMenu() {
-  // État pour gérer la visibilité du menu
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Fonction pour fermer le menu
-  const closeMenu = () => setIsOpen(false);
+  const trigger = <TiThMenu className="h-6 w-6 lg:hidden" aria-label="Menu" />;
 
   return (
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger>
-        <TiThMenu
-          className="h-6 w-6 md:hidden"
-          aria-label="Menu"
-          aria-haspopup="dialog"
-          aria-expanded="false"
-          data-state="closed"
-          onClick={() => setIsOpen(true)}
-        />
-      </SheetTrigger>
-      <SheetContent
-        side={"left"}
-        className="bg-slate-200 from-black via-blue-950 to-black dark:bg-gradient-to-r"
+    <ResponsiveMenuWrapper trigger={trigger}>
+      <ul
+        className={`flex flex-col justify-center gap-4 dark:text-white ${karla.className}`}
       >
-        <ul
-          className={`flex flex-col justify-center gap-4 dark:text-white ${karla.className}`}
-        >
-          <li className="border-b pb-3">
-            <Link href="/" onClick={closeMenu}>
+        {[
+          { href: "/", icon: <FaHome />, label: "Accueil" },
+          { href: "/about", icon: <FaRegQuestionCircle />, label: "A propos" },
+          { href: "/projets", icon: <FaRegImages />, label: "Projets" },
+          { href: "/contact", icon: <GrContact />, label: "Contact" },
+        ].map((item) => (
+          <li key={item.href} className="border-b pb-3">
+            <Link href={item.href}>
               <div className="flex items-center justify-start gap-3">
-                <FaHome />
-                <p>Accueil</p>
+                {item.icon}
+                <p>{item.label}</p>
               </div>
             </Link>
           </li>
-          <li className="border-b pb-3">
-            <Link href="/about" onClick={closeMenu}>
-              <div className="flex items-center justify-start gap-3">
-                <FaRegQuestionCircle />
-                <p>A propos</p>
-              </div>
-            </Link>
-          </li>
-          <li className="border-b pb-3">
-            <Link href="/projets" onClick={closeMenu}>
-              <div className="flex items-center justify-start gap-3">
-                <FaRegImages />
-                <p>Projets</p>
-              </div>
-            </Link>
-          </li>
-          <li className="border-b pb-3">
-            <Link href="/contact" onClick={closeMenu}>
-              <div className="flex items-center justify-start gap-3">
-                <GrContact />
-                <p>Contact</p>
-              </div>
-            </Link>
-          </li>
-        </ul>
-      </SheetContent>
-    </Sheet>
+        ))}
+      </ul>
+    </ResponsiveMenuWrapper>
   );
 }

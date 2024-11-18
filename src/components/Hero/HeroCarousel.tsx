@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -7,8 +9,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
 import Image from "next/image";
