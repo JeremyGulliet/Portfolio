@@ -9,7 +9,7 @@ import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jeremy-gulliet.vercel.app/"),
+  metadataBase: new URL("https://portfolio-jeremy-gulliet.vercel.app/"),
   title: "Portfolio de Jérémy GULLIET - Accueil",
   description:
     "La satisfaction client est ma priorité et je suis prêt à vous accompagner dans la construction de tous vos projets.",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portfolio Jérémy GULLIET",
     description: "Portfolio de Jérémy GULLIET",
-    url: "https://jeremy-gulliet.vercel.app/",
+    url: "https://portfolio-jeremy-gulliet.vercel.app/",
     images: [
       {
         url: "/asset/Projets/Programmer-rafiki.png",
@@ -79,10 +79,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col items-center justify-between bg-emerald-50 dark:bg-gradient-to-r dark:from-black  dark:via-blue-950  dark:to-black ">
-       {/* Google Tag Manager (noscript) */}
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN76QMBG"
-height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-{/* End Google Tag Manager (noscript) */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
